@@ -1,0 +1,138 @@
+.about_sec {
+    /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+@media (max-width: 991px) {
+    .about_sec{
+        padding-top: 70px;
+    }
+}
+@media (max-width: 787px) {
+    .pd80 {
+        max-width: 100%;
+    }
+    .about_sec{
+        padding-top: 50px;
+    }
+    .featureIcon ::after {
+        
+        display: none !important;
+       
+    }
+    }
+@media (max-width: 575px) {
+    
+   
+    }
+@media (max-width: 476px) {
+    
+    }
+
+
+
+.featureIcon{
+    margin-bottom: 0px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+.featureIcon ::after {
+    content: "";
+    border-top: 2px dotted #022d62;
+    width: 52px;
+    display: inline-block;
+    position: absolute;
+    right: -26px;
+    top: 70px;
+}
+
+ .featureIcon.lastIcon ::after {
+    content: "";
+    border-top: 2px dotted #622502;
+    width: 52px;
+    display: none; /* Show the line */
+    position: absolute;
+    right: -26px;
+    top: 70px;
+}
+
+
+.featureIcon:hover .iconImage {
+    color: rgb(255, 255, 255);
+}
+.featureIcon:hover .iconImage a{
+   background-color: red;
+}
+.featureIcon:hover .iconImage a:after{
+    transition: all 0.3s ease-in-out;
+    border-top-color: red;
+ }
+.iconImage {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    border-radius: 50%;
+    font-size: 60px;
+    line-height: 1;
+}
+.iconImage a{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    background: #ff000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.iconImage a:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #f6f6f6;
+    border-width: 9px;
+    margin-left: -9px;
+    margin-top: -1px;
+}
+
+
+/* feature infoo box */
+.featureInfo h5{
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    transition: all 0.3s ease-in-out;
+}
+.featureInfo p{
+    margin-bottom: 0;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    line-height: 1.8;
+    margin-top: 0;
+    text-align: center;
+    color: rgb(103, 108, 113);
+    display: block;
+    font-family: Archivo, sans-serif;
+    font-size :14px;
+    font-style: normal;
+    font-weight: 400;
+}

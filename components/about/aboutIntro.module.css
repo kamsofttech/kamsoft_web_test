@@ -1,0 +1,63 @@
+.pd80{
+    padding: 80px 190px;
+}
+.ab_intro{
+    background: url(/images/about/abBg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    padding: 85px 0px;
+    position: relative;
+    text-align: center;
+}
+.ab_intro:before {
+    content: "";
+    background: url(/images/about/abDrippingTop.png) no-repeat scroll center center;
+    height: 204px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    z-index: 30;
+}
+.ab_intro h6{
+    font-size: 20px;
+    font-family: "Lora", serif;
+    color: #ffffff;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.ab_intro p{
+    
+    font-family: "Lora", serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.counter_box{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media (max-width: 476px) {
+    .pd80 {
+        padding: 80px 22px;
+    }
+    .ab_intro:before {
+        content: "";
+        background: url(/images/about/abDrippingTop.png) no-repeat scroll center center;
+        height: 220px;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: -3px;
+        z-index: 30;
+    }
+    .abt_sec p {
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+    .counter_style {
+        margin-top: 3px;
+    }
+}

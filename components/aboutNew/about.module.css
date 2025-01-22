@@ -1,0 +1,33 @@
+.about_sec {
+    /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    
+}
+
+
+@media (max-width: 991px) {
+    .about_sec{
+        padding-top: 70px;
+    }
+}
+@media (max-width: 787px) {
+    .pd80 {
+        max-width: 100%;
+    }
+    .about_sec{
+        padding-top: 50px;
+    }
+    }
+@media (max-width: 575px) {
+   
+    }
+@media (max-width: 476px) {
+    
+    }
+
+.iconBox1, .iconBox2 ,.iconBox3 ,.iconBox4 ,.iconBox5 ,.iconBox6, .iconBox7{
+    margin-bottom: 1.5rem !important;
+}

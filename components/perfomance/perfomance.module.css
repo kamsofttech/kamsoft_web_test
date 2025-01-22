@@ -1,0 +1,185 @@
+.about_sec {
+
+    background-color: #f6f6f6;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+}
+@media (max-width: 787px) {
+ .column2 h2{
+  font-size: 28px;
+ }
+  .about_sec{
+      padding-top: 50px;
+  }
+  }
+@media (max-width: 575px) {
+  .column2 h2{
+    font-size: 24px;
+   }
+  }
+@media (max-width: 476px) {
+.pd80 {
+    max-width: 100%;
+}
+}
+.pro_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1_column1_images img, .column1_column2 img{
+     border-radius: 5px;
+     margin-top: 1.5rem;
+     margin-bottom: 1.5rem;
+     max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.counterBox{
+    background: #ef3139;
+    padding: 42.4px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+.counterBox span{
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+.counterBox label{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+
+.column2 h2{
+    font-family: "Archivo", sans-serif;
+    font-weight: normal;
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 36px;
+    padding-top: 40px;
+}
+
+/* progress bar */
+/* Progress Bar Container */
+.progress {
+    width: 100%;
+    height: 30px;
+    background-color: #e9ecef;
+    font-size: .75rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 40px 0px 15px;
+    display: inline-block;
+ 
+
+  }
+  
+  /* Striped and Animated Progress Bar */
+  .progressBar {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+   
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0d6efd;
+    transition: width .6s ease;
+   width: 95%;
+    height: 10px;
+    border-radius: 5px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #ff5733,
+      #ff5733 10px,
+      #ef3139 10px,
+      #ef3139 20px
+    );
+    animation: progressAnimation 4s linear infinite;
+  }
+  
+  /* Animation for the Stripes */
+  @keyframes progressAnimation {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 40px 0;
+    }
+  }
+  
+  .progressBarTitle{
+    position: absolute;
+    left: 0;
+    top: -30px;
+    color: #022d62;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+  }
+
+  .progressBar span{
+    position: absolute;
+    right: 0;
+    color: #022d62;
+    top: -30px;
+    font-weight: 600;
+  }
+  .rating_box{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+  }
+  .rating_box ul{
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+
+  }
+  .rating_box li{
+   
+    margin-right: .25rem;
+    display: inline-block;
+    align-items: center;
+    font-size: 21px;
+  }
+  .rating_box h6{
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #022d62;
+    
+  }
+  .rating_box span{
+    color: #ef3139;
+  }
+
+  .column2_row2{
+    margin-top: 2rem;
+    padding-top: 50px;
+  }

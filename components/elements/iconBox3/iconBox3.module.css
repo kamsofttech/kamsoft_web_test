@@ -1,0 +1,27 @@
+.iconBox3{
+    background-color: #ef3139;
+    border-radius: 5px;
+    height: 100%;
+    padding:1.5rem;
+}
+.totEmp{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.totEmp h1{
+    color: #fff;
+    padding-right: 1.5rem;
+    padding-top: .25rem;
+}
+.totEmp h5{
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.empDesc p{
+    color: #fff;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+
+}

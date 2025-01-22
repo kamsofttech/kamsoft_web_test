@@ -1,0 +1,56 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .desc_text{        
+        flex: 0 0 auto;
+        width:63%;}
+    .col-xl-9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+@media (min-width: 768px) {
+    .desc_text {
+        margin-bottom: 0 !important;
+    }
+}
+.section{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding:  0 100px;
+}
+.row{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.desc_text h5{
+    background: #ef3139;
+    color: #ffffff;
+    text-shadow: none;
+    margin-bottom: 0px !important;
+    font-size: 18px;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+.mySwiper img{
+    height: 25.5px;
+}
+.mySwiper::after{
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+}

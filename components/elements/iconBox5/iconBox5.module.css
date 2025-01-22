@@ -1,0 +1,26 @@
+.iconBox5{
+    height: 100%;
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 1rem;
+}
+.iconBox5 h5{
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 18px;
+    margin-bottom: .25rem;
+}
+.iconBox5 img{
+    max-width: 100%;
+    height: auto;
+}
+.iconBox5 p{
+    font-size: 14px;
+    line-height: 1.8;
+    color: #676c71;
+    
+}

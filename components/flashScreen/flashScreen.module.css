@@ -1,0 +1,7 @@
+.flash_loader {
+    z-index: 1000;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+  }

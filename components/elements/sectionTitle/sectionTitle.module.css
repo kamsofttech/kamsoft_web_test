@@ -1,0 +1,18 @@
+.sec_title{
+    margin-bottom: 50px;
+    text-align: center !important;
+}
+.sec_title h2{
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 36px;
+}
+.sec_title p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: #000000;
+}

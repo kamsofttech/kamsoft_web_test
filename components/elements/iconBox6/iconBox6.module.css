@@ -1,0 +1,24 @@
+.iconBox6{
+    background-color: #022d62;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-top: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+.iconBox6 span{
+    color: #ef3139;
+    font-weight: 500px;
+    line-height: 1.2;
+    font-size: 3.5rem;
+}
+.iconBox6 h5{
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 18px;
+    color:#fff;
+}

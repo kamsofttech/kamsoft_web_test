@@ -1,0 +1,21 @@
+.iconBox2  {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px !important;
+  display: flex !important;
+  text-align: center !important;
+  /* padding: 3rem; */
+}
+.iconBox2 span{
+    position: absolute;
+  top: 85%; /* Center vertically */
+  left: 35%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}

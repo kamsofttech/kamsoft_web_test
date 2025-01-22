@@ -1,0 +1,28 @@
+.iconBox7{
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    height: 100%;
+    padding-top: 0px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: end;
+    margin-top: 1rem;
+}
+
+.iconBox7 h5{
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 18px;
+}
+.iconBox7year{
+    color: transparent ;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ef3139;
+    font-weight: bold 700px;
+    display: block;
+    display: 2;
+    font-size: 4.5rem;
+}

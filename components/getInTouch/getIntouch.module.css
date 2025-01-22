@@ -1,0 +1,30 @@
+.form_item_input input,.form_item_input textarea{
+    background: #0000004f;
+    border: 1px solid #9d9d9d4d;
+    color: white;
+}
+.form_item_input input:hover,.form_item_input textarea:hover {
+        border-color: #9d9d9d4d;
+        background-color:#0000004f ;
+}
+.form_item_input input::placeholder,.form_item_input textarea::placeholder{
+    color: #ffffff85;
+}
+.form_item_input input:focus,
+.form_item_input input:focus-within,
+.form_item_input textarea:focus,
+.form_item_input textarea:focus-within{
+    border-color: #9d9d9d4d;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+    outline: 0;
+    background-color: #0000004f;
+}
+.get_form{
+    position: relative;
+    z-index: 1000;
+    margin-top: 20px;
+}
+.er_msg{
+    color: #ffbf30;
+    font-size: 18px;
+}

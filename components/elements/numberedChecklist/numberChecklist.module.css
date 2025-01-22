@@ -1,0 +1,23 @@
+.numberChecklist ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: rgb(103, 108, 113);
+}
+.numberChecklist ul li{
+    margin-bottom: .5rem
+}
+.numberChecklist ul li span{
+    background: rgba(239, 49, 57, 0.1);
+    color: #ef3139;
+    border-radius: 50%;
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    line-height: 25px;
+    font-size: 13px;
+}

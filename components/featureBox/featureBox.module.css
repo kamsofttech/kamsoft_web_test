@@ -1,0 +1,76 @@
+.about_sec {
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    
+}
+.pd80{
+    padding: 80px 0;
+}
+
+@media (max-width: 476px) {
+.pd80 {
+    padding: 80px 10px;
+}
+}
+
+/* get started box */
+
+.getStartedBox{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.getStartedBox p{
+    margin-bottom: 0;
+    margin-right: 1rem ;
+    margin-left: 1rem;
+    line-height: 1.8;
+    margin-top: 0;
+    color: rgb(103, 108, 113);
+}
+.getStartedBox a{
+    color: #022d62;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    margin-right: 1rem ;
+    margin-left: 1rem
+}
+
+.getStartedBox ::before{
+    content: '';
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+   
+    z-index: -1;
+    opacity: 0.8;
+    background-color: #ef3139;
+}
+
+.getStartedBox a:hover{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    background-color: #ef3139;
+
+}

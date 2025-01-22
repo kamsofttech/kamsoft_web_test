@@ -1,0 +1,13 @@
+.prod_tabs{
+position: relative;
+}
+.tab_title{
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    display: block;
+    color: #323232;
+    font-weight: 600;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ffffff;
+}

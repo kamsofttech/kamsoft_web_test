@@ -1,0 +1,13 @@
+.counter_style {
+    background: #ffffff9e;
+	padding: 10px 10px 20px;
+    border-radius: 8px;
+}
+.counter {
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    color: black;
+    text-shadow: 2px 2px 0 rgb(198 195 195);
+}
+

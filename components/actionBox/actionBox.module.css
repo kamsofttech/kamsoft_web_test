@@ -1,0 +1,89 @@
+.about_sec {
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+@media (max-width: 476px) {
+.pd80 {
+    padding: 80px 10px;
+}
+}
+
+
+.action_box{
+    background-color: #ef3139;
+    border-radius: 0.25rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.action_box h2{
+    color: #fff;
+    font-size: 36px;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.action_box  h6{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 0px 1rem;
+}
+
+.getStartedBox2{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.getStartedBox2 a{
+  color: #022d62;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 16px 34px;
+  line-height: 1;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  margin-right: 1rem ;
+  margin-left: 1rem
+}
+
+.getStartedBox2 ::before{
+  content: '';
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  opacity: 0.8;
+  background-color: #fff;
+}
+
+.getStartedBox2 a:hover{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 16px 34px;
+  line-height: 1;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+
+}

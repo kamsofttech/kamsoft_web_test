@@ -1,0 +1,17 @@
+.net_sec {
+    background: url(/images/network/bg.jpg) no-repeat scroll center center;
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    
+}
+.pd80{
+    padding: 80px 190px;
+}
+
+@media (max-width: 476px) {
+.pd80 {
+    padding: 80px 58px;
+}
+}

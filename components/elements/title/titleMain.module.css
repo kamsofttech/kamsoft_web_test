@@ -1,0 +1,52 @@
+.main_title {
+    padding-bottom: 30px;
+  }
+  
+  .main_title h2 {
+    color: #3f4445;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 38px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0 rgb(200 200 200);
+  }
+  
+  .main_title h2:before {
+    content: "";
+    width: 45px;
+    height: 1px;
+    background: #acb2b4;
+    position: absolute;
+    right: -60px;
+    bottom: 7px;
+  }
+  
+  .main_title p {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Lora", serif;
+    color: #242424;
+    margin-bottom: 0px;
+  }
+  
+  .main_title h5 {
+    font-size: 20px;
+    font-family: "Lora", serif;
+    color: #797979;
+    margin-bottom: 0px;
+    line-height: 30px;
+  }
+  
+  @media (max-width: 476px) {
+  .titleMain_main_title h2:before {
+    content: "";
+    width: 45px;
+    height: 1px;
+    background: #acb2b4;
+    position: absolute;
+    right: 107px;
+    bottom: -6px;
+}
+  }

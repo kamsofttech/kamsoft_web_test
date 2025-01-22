@@ -1,0 +1,40 @@
+.column1_column1_images img{
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+   height: auto;
+   vertical-align: middle;
+}
+.counterBox{
+   background: #ef3139;
+   padding: 42.4px;
+   text-align: center;
+   display: block;
+   border-radius: 5px;
+}
+.counterBox span{
+   position: relative;
+   font-size: 36px;
+   line-height: 36px;
+   font-weight: 700;
+   font-family: "Archivo", sans-serif;
+   color: #ffffff;
+   margin-bottom: 10px;
+   display: block;
+   
+}
+.counterBox label{
+   display: block;
+   color: #ffffff;
+   margin-bottom: 0;
+   font-weight: normal;
+}
+.column1_column2 img{
+    border-radius: 5px !important;
+    margin-bottom: 1.5rem !important;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}

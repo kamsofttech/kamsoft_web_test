@@ -1,0 +1,22 @@
+
+
+@media (max-width: 767px) {
+    .iconBox1 h4 {
+        font-size: 20px !important;
+    }
+}
+.iconBox1{
+    padding: 3rem !important;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-family: "Archivo", sans-serif;
+    height: 100%;
+}
+.iconBox1 h1{
+    color: #ef3139;
+}
+.iconBox1 h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #022d62;
+}

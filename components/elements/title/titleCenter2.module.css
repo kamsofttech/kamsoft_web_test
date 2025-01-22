@@ -1,0 +1,27 @@
+.title_center {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .title_center h2 {
+    font-size: 36px;
+    color: #3f4445;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 0 rgb(200 200 200);
+  }
+  
+  .title_center h2:before {
+    content: "";
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #acb2b4;
+    height: 1px;
+  }

@@ -1,0 +1,25 @@
+.footerElements h5{
+    color: #ef3139;
+    font-size: 18px;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+@media (max-width: 575px) {
+    .footerElemnts {
+        margin-bottom: 1.5rem;
+    }
+    }
+
+.footerItems{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.footerItems li a{
+    font-weight: 500;
+    padding: 7px 0px;
+    display: block;
+    color: #fff /*#022d62 */;
+}

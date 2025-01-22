@@ -1,0 +1,91 @@
+.breadcrumb {
+    margin: 0;
+    padding: 95px 0;
+    background-image: url('/images/breadcumb/bd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+  }
+  .breadcrumb:before {
+    content: "";
+    background: #ffffff29;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .bread_crumb_head {
+    text-align: center;
+    position: relative;
+  }
+  .bread_crumb_head .breadcrumb_title h2 {
+    color: #FFF;
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 #646161;
+  }
+  @media (max-width: 991.98px) {
+    .bread_crumb_head .breadcrumb_title h2 {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 767.78px) {
+    .bread_crumb_head .breadcrumb_title h2 {
+      font-size: 14px;
+    }
+  }
+  .breadcrumb_list ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .breadcrumb_list ul li {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .breadcrumb_list ul li span {
+    color: #FCAF3D;
+    margin: 0 7px 0 7px;
+    padding: 0;
+  }
+  .breadcrumb_list ul li a {
+    color: #FFF;
+  }
+  .breadcrumb_list ul li a:hover {
+    color: #FCAF3D;
+  }
+  .breadcrumb_list ul li + li {
+    padding-left: 7px;
+  }
+  .breadcrumb_list ul li + li::before {
+    content: "/";
+    float: left;
+    padding-right: 7px;
+    color: #FCAF3D;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .breadcrumb_border_img img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  @media (max-width: 991.98px) {
+    .breadcrumb {
+      padding: 60px 0;
+    }
+  }
+  @media (max-width: 767.78px) {
+    .breadcrumb {
+      padding: 50px 0;
+    }
+  }

@@ -1,0 +1,53 @@
+.iconBox4{
+    background-image: url("/images/gallery/07.jpg");
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    display: block;
+    margin-top: 1rem;
+    
+}
+.iconBox4::before {
+    background: rgba(2, 45, 98, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    border-radius: 5px;
+    padding-top: 3rem;
+    
+}
+
+
+.ratingBox{
+  position: relative;
+  text-align: center;
+  padding-top: 1.5rem;
+ 
+}
+
+.ratingBox ul{
+  padding-top: 1.5rem;
+  color: #ffc107;
+  list-style: none;
+}
+
+.ratingBox h5{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.ratingBox h5 span{
+  color: #ef3139
+}

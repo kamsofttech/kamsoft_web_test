@@ -1,0 +1,33 @@
+.counterBox{
+    display: flex;
+    -webkit-box-align: center;
+
+    align-items: center;
+    padding: 20px 0px;
+}
+.counterIcon{
+    align-self: center !important;
+    color: #dfdfdf;
+    margin-right: 25px;
+    font-size: 70px;
+    line-height: 70px
+}
+.counter_content{
+    align-self: center !important;
+}
+.counter_content span{
+    color: #022d62;
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+.counter_content label{
+    color: #626262;
+    display: block;
+    margin-bottom: 0;
+    font-weight: normal;
+}

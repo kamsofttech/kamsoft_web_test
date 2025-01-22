@@ -1,0 +1,11 @@
+.checklist{
+    color: #000000;
+    text-align: left;
+    padding: 10px;
+
+}
+.checklist li{
+    margin-bottom: 10px;
+    font-weight: 400px;
+    
+}
