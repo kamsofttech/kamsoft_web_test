@@ -11,8 +11,8 @@ const PerfomanceComponent = () => {
 
 
   return (
-    <section className={styles.about_sec}>
-      <Container className={styles.pd80}>
+    <section className={styles.perfomance_sec}>
+      <Container className={styles.perfomance_con}>
         <div className='pro_box'>
           <Row>
             <Col lg="6">

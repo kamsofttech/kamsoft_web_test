@@ -9,8 +9,8 @@ import NumberChecklist from '../elements/numberedChecklist/NumberChecklist'
 
 const OurServicesNewComponent = () => {
   return (
-    <section className={styles.about_sec}>
-      <Container className={styles.pd80}>
+    <section className={styles.our_serviceNew_sec}>
+      <Container className={styles.our_serviceNew_con}>
         <div className='pro_box_1'>
           <HeadingNew main_title={'Digital marketing services that help you grow.'} sub_title={'We take pride in helping our clients deliver marvelous results when it comes to their projects. From data to performance, we’ve got you covered.'} />
 

@@ -1,16 +1,16 @@
-.about_sec {
+.testimoni_new_sec {
     /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
     background-color: #fff;
     background-size: cover;
     position: relative;
     
 }
-.pd80{
+.testimoni_new_con{
     padding: 80px 0;
 }
 
 @media (max-width: 767px) {
-.pd80 {
+.testimoni_new_con {
    max-width: 100%;
 }
 }

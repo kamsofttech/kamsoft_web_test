@@ -1,9 +1,9 @@
 @media (min-width: 1200px) {
-    .container {
+    .counter_container {
         max-width: 1140px;
     }
 }
-.section{
+.counter_section{
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
     border-color: #eeeeee !important;

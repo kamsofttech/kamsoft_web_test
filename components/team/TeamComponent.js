@@ -8,8 +8,8 @@ import { faArrowRight, faUser } from '@fortawesome/free-solid-svg-icons'
 
 const TeamComponent = () => {
   return (
-    <section className={styles.section}>
-        <Container className={styles.container}>
+    <section className={styles.teamComp_section}>
+        <Container className={styles.teamComp_container}>
             <Row className={styles.row}>
                 <Col lg="9">
                 <SectionTitle heading_title={"Meet our heroes"} items={["Our team is friendly, talkative, and fully reliable."]}/>

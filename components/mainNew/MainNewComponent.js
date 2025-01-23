@@ -6,8 +6,8 @@ import { faFacebook, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-
 
 const MainNewComponent = () => {
     return (
-        <section className={styles.about_sec}>
-            <Container className={styles.pd80}>
+        <section className={styles.main_new_sec}>
+            <Container className={styles.main_new_con}>
                 <div className={styles.pro_box}>
                     <Row>
                         <Col md="6">

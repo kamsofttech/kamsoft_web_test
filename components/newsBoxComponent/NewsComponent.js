@@ -5,8 +5,8 @@ import NewsBox from '../elements/newsBox/NewsBox'
 
 const NewsComponent = () => {
   return (
-    <section className={styles.section}>
-        <Container className={styles.container}>
+    <section className={styles.news_section}>
+        <Container className={styles.news_container}>
             <Row className={styles.row}>
                 <Col sm="6" lg="4"><NewsBox title={"Careers"} desc="Walkout 10 years into your future and feel how it feels to carry on doing the same thing." button_text={"View Positions"}/></Col>
                 <Col sm="6" lg="4"><NewsBox title={"Latest News"} desc="This path is just like today, with one difference: you have 10 fewer years remaining in your life." button_text={"Read Articles"}/></Col>

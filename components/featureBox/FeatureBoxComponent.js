@@ -9,8 +9,8 @@ import {faArrowRight , faLightbulb , faGem , faRocket} from "@fortawesome/free-s
 
 const FeatureBoxComponent = () => {
   return (
-    <section className={styles.about_sec}>
-      <Container className={styles.pd80}>
+    <section className={styles.featureBox_sec}>
+      <Container className={styles.fb_container}>
         <div className='pro_box'>
           <Row>
           <HeadingNew main_title={"Smart strategy & excellent performance"} sub_title={"Process that guarantees high productivity and profitability for your solution."}/>

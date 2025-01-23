@@ -6,8 +6,8 @@ import PricingElement from '../elements/pricingElement/PricingElement'
 
 const PricingBox = () => {
     return (
-        <section className={styles.section}>
-            <Container className={styles.container}>
+        <section className={styles.pricingBox_section}>
+            <Container className={styles.pricingBox_container}>
                 <Row className={styles.row}>
                     <Col lg="9">
                         <SectionTitle heading_title={"Choose the plan that works for you"} items={["Our pricing works for enterprises of all sizes. Starting at just $19 per month"]} />

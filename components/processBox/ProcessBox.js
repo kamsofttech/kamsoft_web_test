@@ -7,8 +7,8 @@ import HorizontalFeatureBox from '../elements/horizontalFeatureInfo/HorizontalFe
 
 const ProcessBox = () => {
   return (
-    <section className={styles.section}>
-        <Container className={styles.section}>
+    <section className={styles.processBox_section}>
+        <Container className={styles.processBox_container}>
             <Row className={styles.row}>
                 <Col md="6">
                 <div className={styles.section_title}>

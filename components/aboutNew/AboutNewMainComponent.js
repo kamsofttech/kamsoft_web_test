@@ -10,8 +10,8 @@ import IconBox7Component from '../elements/iconBox7/IconBox7Component'
 import IconBox6Component from '../elements/iconBox6/IconBox6Component'
 const AboutNewMainComponent = () => {
   return (
-    <section className={styles.about_sec}>
-      <Container className={styles.pd80}>
+    <section className={styles.about_new_sec}>
+      <Container className={styles.about_new_con}>
         <div className='pro_box'>
           <Row>
             <Col lg='3' md='6' className={styles.iconBox1}>

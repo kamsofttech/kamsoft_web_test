@@ -4,8 +4,8 @@ import { Container, Row,Col } from 'react-bootstrap'
 import SectionTitle from '../elements/sectionTitle/SectionTitle'
 const AboutBox = () => {
   return (
-    <section className={styles.section}>
-        <Container className={styles.container}>
+    <section className={styles.aboutBox_section}>
+        <Container className={styles.aboutBox_container}>
             <Row className={styles.row}>
                 <Col lg="9">
                 <SectionTitle heading_title={"Making a decision to do something this is the first step. We all know that nothing moves until someone makes a decision."}

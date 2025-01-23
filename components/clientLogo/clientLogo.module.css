@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-    .container {
+    .client_logo_container {
         max-width: 1140px;
     }
     .desc_text{        
@@ -11,7 +11,7 @@
         }
 }
 @media (min-width: 1400px) {
-    .container {
+    .client_logo_container {
         max-width: 1320px;
     }
 }
@@ -20,7 +20,7 @@
         margin-bottom: 0 !important;
     }
 }
-.section{
+.client_logo_section{
     position: relative;
     display: flex;
     -webkit-box-align: center;

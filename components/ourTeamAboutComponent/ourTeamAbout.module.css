@@ -1,9 +1,9 @@
 @media (min-width: 1200px) {
-    .container {
+    .ourTeamAbout_container {
         max-width: 1140px;
     }
 }
-.section{
+.ourTeamAbout_section{
     padding: 100px 0;
 }
 .row{

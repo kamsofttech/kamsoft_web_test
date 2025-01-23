@@ -1,10 +1,10 @@
 @media (min-width: 1200px) {
-    .container {
+    .teamComp_container {
         max-width: 1140px;
     }
 }
 
-.section{
+.teamComp_section{
     padding: 0 0 100px;
 }
 .row{
