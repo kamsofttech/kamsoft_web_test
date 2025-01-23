@@ -46,7 +46,7 @@
 }
 .featureIcon ::after {
     content: "";
-    border-top: 2px dotted #022d62;
+    border-top: 2px dotted #1dbb26;
     width: 52px;
     display: inline-block;
     position: absolute;
@@ -116,7 +116,7 @@
 .featureInfo h5{
     margin-bottom: 1rem;
     font-size: 18px;
-    color: #022d62;
+    color: #1dbb26;
     margin: 0px 0px 1rem;
     font-weight: bold;
     line-height: 1.2;

@@ -6,7 +6,7 @@
     font-size: 15px;
     padding-top: 9px;
     cursor: pointer;
-    color: #dc3545;
+    color:  #1dbb26;
     font-weight: 600;
     font-family: "Playfair Display", serif;
 }
@@ -18,7 +18,7 @@
     height: 0.5px;
     left: 0;
     width: 40px;
-    background: #dc3545;
+    background:  #1dbb26;
     z-index: 1;
 }
 .loc_add{
@@ -32,5 +32,5 @@
 }
 .loc_add i{
     padding-right: 8px;
-    color: #dc3545;
+    color:  #1dbb26;
 }

@@ -42479,9 +42479,9 @@ ul.products.list li.product .gridlist-buttonwrap {
   display: flex;
   -webkit-box-align: end;
   -moz-box-align: end;
-  -webkit-align-items: end;
+  -webkit- align-items:flex-end;
   -ms-flex-align: end;
-  align-items: end;
+   align-items:flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -42518,7 +42518,8 @@ ul.products.list li.product .gridlist-buttonwrap {
 .lte-services-sc.lte-layout-grid .lte-item:after {
   background-color: #0f0e0f;
   background-color: var(--black);
-  zoom:1;filter: alpha(opacity=40);
+  zoom:1;
+  filter: alpha(opacity=40);
   -webkit-opacity: .4;
   -moz-opacity: .4;
   opacity: .4;
@@ -55430,7 +55431,7 @@ img.mfp-img {
   content: '\e829'
 }
 :root {
-    --color-primary: #dc3545;
+    --color-primary:  #1dbb26;
   }
 
 

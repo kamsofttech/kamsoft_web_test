@@ -42,10 +42,10 @@
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    color: #dc3545;
+    color:  #1dbb26;
   }
   .footer_widget_list ul li i {
-    color: #dc3545;
+    color:  #1dbb26;
     margin-right: 10px;
   }
   .footer_widget_list ul li a {
@@ -56,7 +56,7 @@
     text-decoration: none;
   }
   .footer_widget_list ul li a:hover {
-    color: #dc3545;
+    color:  #1dbb26;
   }
   .footer_widget_list ul li:last-child {
     margin: 0;

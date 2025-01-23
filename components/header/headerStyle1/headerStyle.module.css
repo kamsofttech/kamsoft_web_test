@@ -15,7 +15,7 @@
 .sticky-no .main_bar {
     position: static !important;
 }
-.main_bar:before {
+/* .main_bar:before {
     content: "";
     background: url(/images/nav_btm.png) no-repeat scroll center center;
     height: 19px;
@@ -24,7 +24,7 @@
     left: 0px;
     bottom: -16px;
     z-index: 30;
-}
+} */
 
 /*= when header is sticky =*/
 
@@ -104,7 +104,7 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 7.5%;
-    width: 113px;
+    width: 315px;
     height: 70px;
     position: relative;
     z-index: 9;
@@ -123,7 +123,7 @@
 .logo_header img {
     height: auto;
     width: 100%;
-    max-width: 180px;
+    max-width: 235px;
 }
 
 .logo_header span {
@@ -204,14 +204,14 @@
 
     .logo_header,
     .is_fixed .logo_header {
-        width: 135px;
-        max-width: 135px;
+        width: 145px;
+        max-width: 145px;
         height: 70px;
         margin-left: 20px;
     }
 
     .logo_header img {
-        max-width: 135px;
+        max-width: 145px;
     }
 
     .is_fixed .logo_header a img {

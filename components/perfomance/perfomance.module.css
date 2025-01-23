@@ -66,7 +66,7 @@
 .column2 h2{
     font-family: "Archivo", sans-serif;
     font-weight: normal;
-    color: #022d62;
+    color: #1dbb26;
     margin: 0px 0px 1rem;
     font-weight: bold;
     line-height: 1.2;
@@ -130,7 +130,7 @@
     position: absolute;
     left: 0;
     top: -30px;
-    color: #022d62;
+    color: #1dbb26;
     font-size: 14px;
     font-weight: 600;
     display: block;
@@ -139,7 +139,7 @@
   .progressBar span{
     position: absolute;
     right: 0;
-    color: #022d62;
+    color: #1dbb26;
     top: -30px;
     font-weight: 600;
   }
@@ -172,7 +172,7 @@
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    color: #022d62;
+    color: #1dbb26;
     
   }
   .rating_box span{
