@@ -1,4 +1,4 @@
-.about_sec {
+.action_box_sec {
     background-color: #fff;
     background-size: cover;
     position: relative;
@@ -8,7 +8,7 @@
 
 
 @media (max-width: 476px) {
-.pd80 {
+.ab_conatiner {
     padding: 80px 10px;
 }
 }

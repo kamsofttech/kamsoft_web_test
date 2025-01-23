@@ -9,8 +9,8 @@ const History = () => {
     const [selectedYear, setSelectedYear] = useState("2010");
 
     return (
-        <section className={styles.section}>
-            <Container className={styles.container}>
+        <section className={styles.history_section}>
+            <Container className={styles.history_container}>
                 <Row className={styles.row1}>
                     <Col md="9">
                     <SectionTitle heading_title={"Established 2010 in Hi-soft has been offering world-class information technology."}

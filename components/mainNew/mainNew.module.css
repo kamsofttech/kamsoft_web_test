@@ -1,4 +1,4 @@
-.about_sec {
+.main_new_sec {
     /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
     background-color: #ef3139 ;
     background-size: cover;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 476px) {
-.pd80 {
+.main_new_con {
     
 }
 }

@@ -6,8 +6,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const ActionBoxComponent = () => {
   return (
-    <section className={styles.about_sec}>
-      <Container className={styles.pd80}>
+    <section className={styles.action_box_sec}>
+      <Container className={styles.ab_container}>
         <div className='pro_box'>
           <div className={styles.action_box}>
             <h2>Tell us about your idea, and we’ll make it happen.</h2>

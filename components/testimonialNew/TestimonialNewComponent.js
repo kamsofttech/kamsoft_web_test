@@ -14,8 +14,8 @@ const TestimonialNewComponent = ({secId}) => {
         setSKey(key.activeIndex)
     }
   return (
-    <section className={styles.about_sec}>
-    <Container className={styles.pd80}>
+    <section className={styles.testimoni_new_sec}>
+    <Container className={styles.testimoni_new_con}>
       <div className={styles.pro_box}>
             <Swiper spaceBetween={30}  
         onSlideChange={(index) => slideChange(index)}

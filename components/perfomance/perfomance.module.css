@@ -1,4 +1,4 @@
-.about_sec {
+.perfomance_sec {
 
     background-color: #f6f6f6;
     background-size: cover;
@@ -9,7 +9,7 @@
  .column2 h2{
   font-size: 28px;
  }
-  .about_sec{
+  .perfomance_sec{
       padding-top: 50px;
   }
   }
@@ -19,7 +19,7 @@
    }
   }
 @media (max-width: 476px) {
-.pd80 {
+.perfomance_con {
     max-width: 100%;
 }
 }

@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 const Portfolio = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.portfolio_section}>
         <Container fluid>
             <Row className={styles.row1}>
                 <Col md="6" lg="3"><a><img src='/images/gallery/01.jpg' /></a></Col>

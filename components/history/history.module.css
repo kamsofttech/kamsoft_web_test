@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-    .container {
+    .history_container {
         max-width: 1140px;
     }
     .sec_title p{
@@ -7,7 +7,7 @@
         padding-left: 3rem !important;
     }
 }
-.section{
+.history_section{
     padding: 100px 0;
 }
 .row1{

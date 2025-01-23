@@ -7,8 +7,8 @@ import CountUp from 'react-countup'
 
 const OurTeamAboutComp = () => {
   return (
-    <section className={styles.section}>
-        <Container className={styles.container}>
+    <section className={styles.ourTeamAbout_section}>
+        <Container className={styles.ourTeamAbout_container}>
             <Row className={styles.row}>
                 <Col lg="6"><div className={styles.section_title}>
                     <h2>We enable constant enterprise transformation at speed and scale.</h2>

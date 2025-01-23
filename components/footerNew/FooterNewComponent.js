@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const footerNew = () => {
     return (
-        <section className={styles.about_sec}>
+        <section className={styles.footerNew_sec}>
             <Container fluid>
             <Row>
                 <Col lg ="6">

@@ -9,8 +9,8 @@ import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
 
 const ClientLogo = () => {
     return (
-        <section className={styles.section}>
-            <Container className={styles.container}>
+        <section className={styles.client_logo_section}>
+            <Container className={styles.client_logo_container}>
                 <Row className={styles.row}>
                     <Col xl="3" lg="4" md="4">
                         <div className={styles.desc_text}>

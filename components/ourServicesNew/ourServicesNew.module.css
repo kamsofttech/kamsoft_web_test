@@ -1,4 +1,4 @@
-.about_sec {
+.our_serviceNew_sec {
     background-color: #fff;
     background-size: cover;
     position: relative;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 991px) {
-    .about_sec{
+    .our_serviceNew_sec{
         padding-top: 70px;
     }
     .box_1{
@@ -25,10 +25,10 @@
 }
 @media (max-width: 787px) {
     
-    .pd80 {
+    .our_serviceNew_con {
         max-width: 100%;
     }
-    .about_sec{
+    .our_serviceNew_sec{
         padding-top: 50px;
     }
     .box_1{
