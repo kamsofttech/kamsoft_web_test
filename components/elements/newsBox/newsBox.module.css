@@ -4,25 +4,26 @@
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .news_content{
-    transition: all 0.3s ease-in-out;
+    
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.news_content h4{
+.news_info .news_content h4{
     position: absolute;
     top: 45px;
     font-weight: 400 !important;
     margin-bottom: 1rem !important;
     font-size: 24px;
     color: #022d62;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     margin: 0px 0px 1rem;
     line-height: 1.2;
 }
 .news_content p{
-    margin-top: 50px;
+    margin-top: 50px ;
     margin-bottom: 0;
     transition: all 0.3s ease-in-out;
     line-height: 1.8;
@@ -37,7 +38,7 @@
     line-height: 1;
     border-radius: 50px;
     z-index: 1;
-    transition: all 0.3s ease-in-out !important;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     text-decoration: none;
     color: #fff !important;
     text-align: center;
@@ -53,18 +54,19 @@
     left: 0;
     top: 0;
     border-radius: 50px;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: -1;
 }
 .news_info:hover{
     background: #022d62;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     
 }
 .news_info:hover .news_content p{
     color: #fff;
 }
 .news_info:hover h4{
-    transform: translateY(-100px);
+    transform: translateY(0);
     
 }
 .news_info:hover .news_content{
