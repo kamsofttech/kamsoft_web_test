@@ -1,0 +1,89 @@
+.team{
+    text-align: center;
+    position: relative;
+}
+.teambg{
+    background: #ffffff;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 120%;
+    height: 134%;
+    z-index: 4;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+}
+.teamImg img{
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.teamInfo{
+    padding: 20px 0px 0px;
+}
+.teamInfo a{
+    color: #022d62;
+    font-size: 13px;
+    font-weight: 600;
+    
+}
+.teamInfo a:hover{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #ef3139;
+}
+.teamInfo p{
+    font-size: 11px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-top: 0;
+    color:rgb(103, 108, 113);
+    
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0px;
+}
+
+.connect li{
+    margin: 0 12px;
+}
+
+  
+  /* === Social Media Icons (Hidden Initially) === */
+  .connect {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;                      /* Initially Hidden */
+    transform: translateY(20px);      /* Moves down initially */
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  }
+  
+  /* === Hover Effects === */
+ 
+
+  
+  /* === Social Icons Become Visible with Smooth Upward Transition === */
+  .team:hover .connect {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  

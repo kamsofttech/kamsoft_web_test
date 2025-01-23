@@ -1,4 +1,42 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.section{
+    padding: 0 0 100px;
+}
 .row{
     display: flex;
     justify-content: center;
+}
+.teamApplyPosition{
+    text-align: center;
+    position: relative;
+}
+.teamIcon{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: #022d62;
+    padding: 0;
+    border-radius: 3px;
+    font-size: 110px;
+    min-height: 173px;
+    color: rgba(255, 255, 255, 0.1);
+}
+.teamInfo{
+    padding: 20px 0px 0px;
+}
+.teamInfo a{
+    padding: 0;
+    font-size: 13px;
+    color: #ef3139;
+    font-weight: bold;
+}
+.teamInfo a:hover{
+    color: #022d62;
 }
