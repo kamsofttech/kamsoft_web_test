@@ -15,28 +15,28 @@ import SliderMainComponent from "@/components/slider/SliderMainComponent";
 import TestimonialComponent from "@/components/testimonial/TestimonialComponent";
 import TestimonialNewComponent from "@/components/testimonialNew/TestimonialNewComponent";
 import React, { useEffect, useState } from "react";
-import { ToggleButton,Button } from "react-bootstrap";
+import { ToggleButton, Button } from "react-bootstrap";
 const Home = () => {
-  const [secId,setSecId]=React.useState(1)
-  const sec1=React.useRef('')
-  const sec2=React.useRef('')
-  const sec3=React.useRef('')
- 
-  
- return (
-    <>
-    
+  const [secId, setSecId] = React.useState(1)
+  const sec1 = React.useRef('')
+  const sec2 = React.useRef('')
+  const sec3 = React.useRef('')
 
-     { /*<a onClick={()=>window.scrollTo(0,sec2.current.offsetHeight)}>click</a>*/}
-    <MainNewComponent/>
-    {/* <SliderBottomComponent/> */}
-    <AboutNewMainComponent/>
-    <OurServicesNewComponent/>
-    <ActionBoxComponent/>
-    <FeatureBoxComponent/>
-    <PerfomanceComponent/>
-   <TestimonialNewComponent/>
-    
+
+  return (
+    <>
+
+
+      { /*<a onClick={()=>window.scrollTo(0,sec2.current.offsetHeight)}>click</a>*/}
+      <MainNewComponent />
+      {/* <SliderBottomComponent/> */}
+      <AboutNewMainComponent />
+      <OurServicesNewComponent />
+      <ActionBoxComponent />
+      <FeatureBoxComponent />
+      <PerfomanceComponent />
+      <TestimonialNewComponent />
+
     </>
   );
 };

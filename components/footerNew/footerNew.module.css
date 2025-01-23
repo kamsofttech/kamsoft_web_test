@@ -1,6 +1,6 @@
 .about_sec {
     /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
-    background-color: #022d62;
+    background-color: #1dbb26;
     background-size: cover;
     position: relative;
     overflow: hidden !important;
@@ -102,7 +102,7 @@
 }
 
 .foot_box2_items p{
-    color: #022d62;
+    color: #1dbb26;
     margin-bottom: 0 ;
     margin-top: 3rem;
     line-height: 1.8;

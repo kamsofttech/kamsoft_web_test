@@ -32,12 +32,12 @@
 }
 .nav > li > a:hover {
     background-color: transparent;
-    color: #dc3545 !important;
+    color:  #1dbb26 !important;
 }
 .nav > li > a:active,
 .nav > li > a:focus {
     background-color: transparent;
-    color: #dc3545 
+    color:  #1dbb26 
 }
 
 .nav > li.active > a,
@@ -139,7 +139,7 @@
 }
 .nav > li .sub_menu li:hover > a {
     color: #ffffff;
-    background: #dc3545;
+    background:  #1dbb26;
 }
 .nav > li .sub_menu li:last-child {
     border-bottom: 0px;

@@ -16,7 +16,7 @@
     font-weight: 400 !important;
     margin-bottom: 1rem !important;
     font-size: 24px;
-    color: #022d62;
+    color: #1dbb26;
     transition: all 0.3s ease-in-out;
     margin: 0px 0px 1rem;
     line-height: 1.2;
@@ -57,7 +57,7 @@
     z-index: -1;
 }
 .news_info:hover{
-    background: #022d62;
+    background: #1dbb26;
     
 }
 .news_info:hover .news_content p{
