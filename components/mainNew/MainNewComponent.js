@@ -68,8 +68,9 @@ const MainNewComponent = () => {
                         </Col>
                         <Col md="6">
                             <div className={styles.rightInfo}>
-                                <img src={'/images/slider/05.jpg'} />
-                            </div></Col>
+                                <img src={'/images/slider/kam16-white.gif'} />
+                            </div>
+                          </Col>
                     </Row>
                 </div>
             </Container>
