@@ -1,0 +1,181 @@
+@media (min-width: 768px) {
+    .head_row {
+        padding-bottom: 3rem !important;
+    }
+}
+@media (min-width: 1200px) {
+    .displayTabs_con {
+        max-width: 1140px;
+    }
+    .left_title h3{
+        font-size: 4.5rem;
+    }
+}
+.displayTabs_sec{
+    padding: 0 0 100px;
+}
+.head_row{
+    display: flex;
+    justify-content: center !important;
+}
+.title_box{
+    display: flex;
+    align-items: center !important;
+}
+.left_title{
+    margin-right: 1.5rem !important;
+}
+.left_title p{
+    margin-bottom: 0 !important;
+    line-height: 1.8;
+    margin-top: 0;
+}
+.left_title h3{
+    color: #ef3139 !important;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.2;
+}
+.right_title{
+    margin-right: 1rem !important;
+}
+.right_title h2{
+    margin-bottom: 0 !important;
+    font-size: 36px;
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.tab_container{
+    height: 100% !important;
+    display: flex !important;
+    align-self: center;
+    padding-left: 0px;
+    
+}
+.tabs_div{
+    align-self: center !important;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    
+}
+
+/* Base Tabs Styling */
+
+ .tab_title{
+    display: flex;
+    color: #022d62 !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    padding: 20px 0px !important;
+    font-weight: 600 !important;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .tab_container :global(.ant-tabs-tab):hover .tab_title {
+    color: #ef3139 !important;
+    background: transparent !important;
+    -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+    transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  }
+  .tab_title:before{
+    display: block;
+      content: attr(aria-details);
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-transition: .5s ease-in-out all;
+      transition: .5s ease-in-out all;
+      -webkit-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+              transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+      font-weight: bold;
+      width: 100%;
+  }
+  
+  /* FontAwesome Arrow */
+  .tab_title:after {
+    content: '\f061';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .tab_container :global(.ant-tabs-tab) .tab_title{
+  display: block;
+    position: relative;
+    -webkit-transition: .5s ease-in-out all;
+    transition: .5s ease-in-out all;
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100%;
+    font-weight: 500; }
+
+  .tab_container :global(.ant-tabs-tab) a{
+    margin-right: 20px;
+  }
+ 
+  /* Active Tab */
+  .tab_container :global(.ant-tabs-tab-active) .tab_title{
+    color: #ef3139 !important;
+    background: transparent !important;
+    ;
+  }
+  
+ 
+  .tab_container :global(.ant-tabs-tab-active) .tab_title{
+  -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  transform: translate3d(0px, 0px, -30px) rotateX(90deg);}
+
+  
+  .content_container :global(.ant-tabs-content-holder) {
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1199px) {
+    .tab_title {
+      font-size: 18px !important;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .tab_title {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .tab_title {
+      padding: 0 25px 25px 0 !important;
+      font-size: 16px !important;
+    }
+  
+    .tab_title-active::after {
+      content: none !important;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .tab_title {
+      font-size: 14px !important;
+      padding: 10px !important;
+    }
+  }
+  

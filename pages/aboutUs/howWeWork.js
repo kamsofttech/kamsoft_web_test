@@ -9,7 +9,7 @@ import React from 'react'
 const howWeWork = () => {
   return (
     <div>
-        <BreadcumbStyle2 BreadcumbStyle2 main_title={"About Hi-soft"} sub_title={"Our Expertise. Know more about what we do"} background={"url('/images/header-inner/09.jpg') no-repeat center center/cover"}/>
+        <BreadcumbStyle2 main_title={"About Hi-soft"} sub_title={"Our Expertise. Know more about what we do"} background={"url('/images/header-inner/09.jpg') no-repeat center center/cover"}/>
         <AboutBox/>
         <ProcessBox/>
         <PricingBox/>

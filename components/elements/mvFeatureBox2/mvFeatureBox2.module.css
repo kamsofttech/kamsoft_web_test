@@ -1,0 +1,66 @@
+@media (min-width: 1200px) {
+    .mvfeatureBox2_content h4 {
+        font-size: 1.5rem;
+    }
+}
+.mvfeatureBox2{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.mvfeatureBox2_img img{
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.mvfeatureBox2_content{
+    padding: 30px 0 10px;
+    background: #ffffff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.mvfeatureBox2_content h4{
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
+    font-weight: 600;
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.mvfeatureBox2_content p{
+    line-height: 1.8;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+.mvfeatureBox2_content a{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #ef3139;
+    border-radius: 50%;
+    -webkit-box-align: center;
+    color: #6f6f6f;
+    justify-content: center;
+    align-items: center;
+}
+.mvfeatureBox2:hover .mvfeatureBox2_content{
+    margin-top: -40px;
+    padding-bottom: 50px;
+}
+.mvfeatureBox2:hover .mvfeatureBox2_content a{
+    bottom: 0px;
+    opacity: 1;
+
+}
+.mvfeatureBox2_content a:hover{
+    color: #022d62;
+}

@@ -19,7 +19,7 @@ const ClientLogo = () => {
                     </Col>
                     <Col xl="9" md="8">
                         <Swiper
-                        
+
                             slidesPerView={3}
                             spaceBetween={30}
                             freeMode={true}
@@ -32,12 +32,12 @@ const ClientLogo = () => {
 
                             modules={[Autoplay, Pagination, Navigation, FreeMode]}
                             className="mySwiper" >
-                            <SwiperSlide ><img src="/images/award-logo/01.svg"/></SwiperSlide>
-                            <SwiperSlide><img src="/images/award-logo/02.svg"/></SwiperSlide>
-                            <SwiperSlide><img src="/images/award-logo/03.svg"/></SwiperSlide>
-                            <SwiperSlide><img src="/images/award-logo/04.svg"/></SwiperSlide>
-                            <SwiperSlide><img src="/images/award-logo/05.svg"/></SwiperSlide>
-                            <SwiperSlide><img src="/images/award-logo/06.svg"/></SwiperSlide>
+                            <SwiperSlide ><img src="/images/award-logo/01.svg" style={{filter: 'grayscale(100%)'}}/></SwiperSlide>
+                            <SwiperSlide><img src="/images/award-logo/02.svg" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/award-logo/03.svg" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/award-logo/04.svg" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/award-logo/05.svg" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/award-logo/06.svg" /></SwiperSlide>
                         </Swiper>
                     </Col>
                 </Row>

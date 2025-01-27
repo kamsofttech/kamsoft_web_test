@@ -1,0 +1,37 @@
+.mvfeature_box{
+    padding: 35px;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+    box-shadow: 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff !important;
+}
+.mvFeature_icon{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    position: inherit;
+    top: 0;
+    font-size: 60px;
+    line-height: 1;
+}
+.mvFeature_icon h4{
+    color: #fff !important;
+    margin-left: 1.5rem !important;
+    margin-bottom: 0 !important;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.mvFeature_content p{
+    margin-bottom: 0 !important;
+    line-height: 1.8;
+    margin-top: 0;
+    color: #fff !important;
+}
