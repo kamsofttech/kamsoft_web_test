@@ -1,0 +1,70 @@
+@media (min-width: 1200px) {
+    .mvabout2_con {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 768px) {
+    .row1 {
+        padding-bottom: 3rem !important;
+    }
+}
+@media (min-width: 992px) {
+    .row1 h2 {
+        margin-bottom: 0 !important;
+    }
+}
+@media (min-width: 992px) {
+    .column2{
+        text-align: right !important;
+    }
+}
+.mvabout2_sec{
+    padding: 100px 0;
+    background-color: #FFFFFF;
+}
+.mvabout2_con{
+
+}
+.row1{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+.row1 h2{
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 36px;
+}
+.row1 a{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #022d62;
+}
+.row1 a:before{
+    content: '';
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    opacity: 0.8;
+    background-color: #efefef;
+}
+.row1 a:hover:before{
+    width: 100%;
+}

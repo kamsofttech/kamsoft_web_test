@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+    .missvissAbout_con {
+        max-width: 1140px;
+    }
+}
+.missvissAbout_sec{
+    padding: 100px 0 0;
+}
+.missvissAbout_con{
+
+}
+.row1{
+    display: flex;
+    justify-content: center;
+}
+.row2{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,29 @@
+.column1 img{
+    border-radius: .25rem !important;
+    max-width: 100%;
+    height: auto;
+}
+.column2{
+    align-self: center;
+}
+.column2 h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.column2 p{
+    margin-bottom: 1.5rem !important;
+    line-height: 1.8;
+    margin-top: 0;
+}
+.column2 h6{
+    color: #6c757d !important;
+    font-weight: 400 !important;
+    margin-top: 1.5rem !important;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px 0px 1rem;
+}

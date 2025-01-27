@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const HoverButton = ({bgcolor,t_color,button_text}) => {
   return (
-    <a className={styles.button} style={{background: bgcolor, color:t_color}}>{button_text} <FontAwesomeIcon icon={faArrowRight}/></a>
+    <a href='' style={{background: bgcolor, color:t_color}}>{button_text} <FontAwesomeIcon icon={faArrowRight}/></a>
   )
 }
 

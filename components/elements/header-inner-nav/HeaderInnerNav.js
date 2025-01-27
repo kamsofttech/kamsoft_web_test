@@ -13,7 +13,7 @@ const HeaderInnerNav = () => {
                     <li><a href="/aboutUs/careers">Careers</a></li>
                     <li><a href="/aboutUs/howWeWork">How we work</a></li>
                     <li><a href="/aboutUs/ourTeam">Our team</a></li>
-                    <li><a href="/aboutUs/missions_vissions">Mission and vision</a></li>
+                    <li><a href="/aboutUs/missionVission">Mission and vision</a></li>
                     <li><a href="/aboutUs/our_values">Our values</a></li>
                 </ul>
                 </Col>

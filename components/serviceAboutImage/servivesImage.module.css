@@ -1,0 +1,38 @@
+.serviceimage_sec{
+    padding: 100px 0 100px;
+}
+.bgImg2{
+    background-image: url('/images/bg/services1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+.bgContent{
+    color: #fff;
+    padding: 10rem;
+}
+.bgContent h4{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: "Smooch Sans", serif !important;
+  
+}
+.bgContent h1{
+    font-family: "Cormorant", serif;
+    margin-bottom: 1.5rem;
+}
+.bgContent a{
+    margin-top: 20px;
+    background-color: black;
+   padding: 10px;
+   border-radius: 5px;
+   text-transform: capitalize;
+   transition: transform 0.2s;
+   transition: all 0.3s ease;
+   transform: translate(-25%, -25%);
+}
+.bgContent a:hover{
+    padding: 15px 20px;
+    font-size: 1.4em;
+}

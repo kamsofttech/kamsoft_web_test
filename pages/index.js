@@ -1,18 +1,16 @@
 
-import OurServicesComponent from "@/components/Services/OurServicesComponent";
-import AboutIntroComponent from "@/components/about/AboutIntroComponent";
 import AboutNewMainComponent from "@/components/aboutNew/AboutNewMainComponent";
 import ActionBoxComponent from "@/components/actionBox/ActionBoxComponent";
+import CaseStudyComponent from "@/components/caseStudy/CaseStudyComponent";
+import DisplayTabs from "@/components/displayTabs/DisplayTabs";
 import FeatureBoxComponent from "@/components/featureBox/FeatureBoxComponent";
 
-import StoreLocationComponent from "@/components/location/StoreLocationComponent";
+
 import MainNewComponent from "@/components/mainNew/MainNewComponent";
 import OurServicesNewComponent from "@/components/ourServicesNew/OurServicesNewComponent";
-import PartnerComponent from "@/components/partners/PartnerComponent";
 import PerfomanceComponent from "@/components/perfomance/PerfomanceComponent";
-import SliderBottomComponent from "@/components/slider/SliderBottomComponent";
-import SliderMainComponent from "@/components/slider/SliderMainComponent";
-import TestimonialComponent from "@/components/testimonial/TestimonialComponent";
+import ServicesImage from "@/components/serviceAboutImage/ServicesImage";
+
 import TestimonialNewComponent from "@/components/testimonialNew/TestimonialNewComponent";
 import React, { useEffect, useState } from "react";
 import { ToggleButton, Button } from "react-bootstrap";
@@ -36,7 +34,9 @@ const Home = () => {
       <FeatureBoxComponent />
       <PerfomanceComponent />
       <TestimonialNewComponent />
-
+      <ServicesImage/>
+      <CaseStudyComponent/>
+      <DisplayTabs/>
     </>
   );
 };
