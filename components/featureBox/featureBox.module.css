@@ -55,22 +55,16 @@
     top: 0;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-   
     z-index: -1;
     opacity: 0.8;
     background-color: #ef3139;
 }
 
-.getStartedBox a:hover{
-    font-size: 14px;
-    font-weight: bold;
-    padding: 16px 34px;
-    line-height: 1;
-    border-radius: 50px;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-    background-color: #ef3139;
+.getStartedBox a:hover::before{
+    width: 100%;
+    color:#fff;
 
+}
+.getStartedBox a:hover{
+    color: #fff;
 }

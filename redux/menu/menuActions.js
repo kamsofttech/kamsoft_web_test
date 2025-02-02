@@ -1,4 +1,9 @@
+
+import Axios from 'axios';
+import {API_PATH } from '../../Global';
+import {getMenuItems} from '../../lib/api'
 import { menuActionTypes } from './menuActionTypes' // get dynamic user acton types
+
 export const setProductTabKey = data => ({
     type: menuActionTypes.SET_PRODUCT_TAB_KEY,
     payload: data
@@ -19,3 +24,21 @@ export const setIsLoading = data => ({
     type: menuActionTypes.SET_IS_LOADING,
     payload: data
 })
+export const setTabKey = data => ({
+    type: menuActionTypes.SET_TAB_KEY,
+    payload: data
+
+})
+export const setMenuData = data => ({
+    type: menuActionTypes.SET_MENU_DATA,
+    payload: data
+
+})
+export const fetchMenuData = () => {
+    return async dispatch => {
+        const menuItems = await getMenuItems() //applo client 
+        dispatch(setMenuData(menuItems))
+        
+
+    }
+}

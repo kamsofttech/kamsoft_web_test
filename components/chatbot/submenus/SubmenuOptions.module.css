@@ -1,0 +1,22 @@
+/* ButtonList.module.css */
+.container {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 5px; /* Add space between buttons */
+}
+
+.button {
+  /* padding: 10px 15px; */
+  padding: 3px 5px;
+  background-color: rgb(93, 180, 93);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #5db45dd6; /* Change color on hover */
+}

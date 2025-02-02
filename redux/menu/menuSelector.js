@@ -1,5 +1,7 @@
 import { createSelector } from 'reselect'
 const selectMenu = state => state.menu
+
+
 export const selectProductTabKey = createSelector(
     [selectMenu],
     (menu) => menu.tabKey
@@ -20,3 +22,11 @@ export const selectIsLoading = createSelector(
     [selectMenu],
     (menu) => menu.isLoading
 )
+export const selectTabKey= createSelector(
+    [selectMenu],
+    data => data.tabKey
+);
+export const selectMenuData= createSelector(
+    [selectMenu],
+    data => data.MenuData
+);

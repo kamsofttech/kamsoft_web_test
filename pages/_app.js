@@ -10,6 +10,8 @@ import { persistStore } from 'redux-persist'
 import Head from 'next/head';
 import MainLayout from '@/components/mainLayout/MainLayout';
 import FlashScreen from '@/components/flashScreen/FlashScreen';
+import 'react-chatbot-kit/build/main.css';
+import Chatbot from '../components/ChatbotComponent/Chatbot';
 
 let persistor= persistStore(store);
 const App = ({Component,pageProps}) => {
@@ -36,10 +38,12 @@ const App = ({Component,pageProps}) => {
          
       <MainLayout>
         <Component {...pageProps} />
+        <Chatbot />
       </MainLayout>
       
     </FlashScreen>
     </PersistGate>
+
       </Provider>
 
   )

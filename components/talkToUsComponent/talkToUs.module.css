@@ -1,0 +1,27 @@
+.talkToUs {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    height: 250px;
+    margin-left: -3px;
+    margin-bottom: -3px;
+    z-index: 999;
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    background-color: #1dbb26;
+    margin-right: -40px;
+    padding-top: 10px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

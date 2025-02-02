@@ -1,6 +1,7 @@
 import { menuActionTypes } from './menuActionTypes'
 const INITIAL_STATE = {
-    tabKey: '',
+    MenuData: [],
+    tabKey: null,
     menuItem:'',
     pItem:'',
     subCatData:'',
@@ -39,6 +40,16 @@ const menuReducer = (state = INITIAL_STATE, action) => {
                     isLoading: action.payload,
                     
                 }
+                case menuActionTypes.SET_TAB_KEY:
+                        return {
+                            ...state,
+                            tabKey: action.payload
+                        };
+                case menuActionTypes.SET_MENU_DATA:
+                    return {
+                        ...state,
+                        MenuData: action.payload
+                    };
         default:
             return state
     }

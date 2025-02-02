@@ -1,0 +1,48 @@
+.itemBox{
+    position: relative;
+    z-index: 1;
+    border-radius: 5px !important;
+    padding: 3rem 1rem 3rem 1rem !important;
+    height: 100% !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+.itemBox::before{
+    background: rgba(255, 255, 255, 0.1);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    border-radius: 5px !important;
+}
+.itemBox img{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 25% !important;
+    max-width: 100%;
+    height: auto;
+}
+.itemBox h5{
+    color: #fff !important;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1rem !important;
+    font-size: 18px;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.itemBox ul{
+    margin-bottom: 0 !important;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+}
+.itemBox ul li{
+    margin-right: .5rem;
+    color: #fff !important;
+    display: inline-block;
+
+}

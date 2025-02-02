@@ -5,12 +5,20 @@ import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
 import { composeWithDevTools } from '@redux-devtools/extension';
 import menuReducer from "./menu/menuReducer";
+import { chatbotReducer } from "./ChatbotClose/chatbotReducer";
+import chatReducer from "./ChatBot/chatbotReducer";
+import drawerReducer from "./Drawer/drawerReducer";
+import udcReducer from './udc/udcReducer';
+import serviceReducer from './services/serviceReducer';
 
 
 //COMBINING ALL REDUCERS
 const reducers = combineReducers({
-    menu: menuReducer
-    
+    menu: menuReducer,
+    chatbot: chatbotReducer,
+    drawer: drawerReducer,
+    udc: udcReducer,
+    services: serviceReducer,
 });
 // BINDING MIDDLEWARE
 /*const bindMiddleware = (middleware) => {
@@ -21,8 +29,8 @@ const reducers = combineReducers({
     return applyMiddleware(...middleware);
 };*/
 const config ={
-    key: "root",
-    whitelist: ["menu"], // only counter will be persisted, add other reducers if needed
+    key: "vptuem",
+    whitelist: ["udc","services","menu","user"], // only counter will be persisted, add other reducers if needed
     storage,
 }
 

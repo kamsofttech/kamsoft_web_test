@@ -1,0 +1,27 @@
+.for_mood {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: nowrap;
+  padding: 10px;
+  flex-direction: row;
+  overflow: auto; /* Add scroll behavior if content overflows */
+  max-width: 300px; /* Optional: Limit width to test scroll */
+  max-height: 100px;
+}
+
+.forButton {
+  background-color: red; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding for button size */
+  font-size: 12px; /* Set font size */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+.forButton {
+  background-color: #4c9a7f; /* Darken the button on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}

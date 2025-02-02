@@ -40,13 +40,9 @@
 }
 
  .featureIcon.lastIcon ::after {
-    content: "";
-    border-top: 2px dotted #622502;
-    width: 52px;
-    display: none; /* Show the line */
-    position: absolute;
-    right: -26px;
-    top: 70px;
+    content: none;
+    border-top: none;
+    
 }
 
 

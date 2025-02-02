@@ -1,0 +1,9 @@
+@media (min-width: 1200px) {
+    .ourExpertise_con{
+        max-width: 1140px;
+    }
+}
+.ourExpertise_sec{
+    padding: 100px 0px;
+    background-color: #022d62 !important;
+}

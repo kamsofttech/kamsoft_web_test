@@ -73,7 +73,8 @@
     color: #022d62 !important;
     font-size: 22px !important;
     line-height: 1 !important;
-    padding: 20px 0px !important;
+    padding: 20px +3
+    0px !important;
     font-weight: 600 !important;
     position: relative;
     transition: all 0.5s ease-in-out;
@@ -111,8 +112,17 @@
     position: absolute;
     right: 20px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+-webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+    transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  }
+  .tab_container :global(.ant-tabs-tab):hover .tab_title:after{
+    opacity: 1;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      right: -20px
+      
   }
   .tab_container :global(.ant-tabs-tab) .tab_title{
   display: block;
@@ -127,7 +137,8 @@
     font-weight: 500; }
 
   .tab_container :global(.ant-tabs-tab) a{
-    margin-right: 20px;
+    margin-right: 35px;
+    margin-left: 0px;
   }
  
   /* Active Tab */
@@ -136,8 +147,12 @@
     background: transparent !important;
     ;
   }
-  
- 
+  .tab_container :global(.ant-tabs-tab-active) .tab_title::after{
+  opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    right: 0;
+  }
   .tab_container :global(.ant-tabs-tab-active) .tab_title{
   -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
   transform: translate3d(0px, 0px, -30px) rotateX(90deg);}
