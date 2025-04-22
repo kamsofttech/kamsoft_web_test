@@ -92,6 +92,7 @@
 .main_bar {
     width: 100%;
     position: relative;
+    padding: 4px 0;
 }
 
 .logo_header {
@@ -123,7 +124,7 @@
 .logo_header img {
     height: auto;
     width: 100%;
-    max-width: 235px;
+    max-width: 270px;
 }
 
 .logo_header span {
