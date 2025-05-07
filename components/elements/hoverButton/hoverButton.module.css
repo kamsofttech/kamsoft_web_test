@@ -13,7 +13,7 @@
 }
 .button a:before{
     opacity: 1;
-    background-color: #ef3139;
+    background-color: #3a3a3a;
     content: '';
     width: 60px;
     height: 100%;

@@ -19,7 +19,7 @@ const MissVissAboutComp = () => {
         <Row className={styles.row2}>
           <Col sm="6"><MVFeatureBox bgcolor={"#022d62"} icon={faEye} title={"Our Vision"}
             desc={"To make these virtues a habit, himself on his daily actions. In a journal he drew a table with a row for every virtue and a column for every day of the week."} /></Col>
-          <Col sm="6"><MVFeatureBox bgcolor={"#ef3139"} icon={faCrosshairs} title={"Our Mission"}
+          <Col sm="6"><MVFeatureBox bgcolor={"#3a3a3a"} icon={faCrosshairs} title={"Our Mission"}
             desc={"We also know those epic stories, those modern-day legends surrounding the early failures of such supremely successful folks as Michael Jordan and Bill Gates."} /></Col>
         </Row>
       </Container>

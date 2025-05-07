@@ -5,6 +5,7 @@ import { Navbar, Container } from 'react-bootstrap'
 import { useRouter } from 'next/router';
 import { Button, Space } from 'antd';
 import NavigationStyle1Component from '@/components/navigation/navigationStyle1/NavigationStyle1Component';
+import TopExtraNavComponent from './TopExtraNavComponent';
 
 const HeaderStyle1Component = () => {
     const router=useRouter()
@@ -35,8 +36,10 @@ const HeaderStyle1Component = () => {
     return (
         
         <header className={`${styles.site_header} header `}>
+            <TopExtraNavComponent isFixed={isFixed}/>
 		<div className={`sticky-header main-bar-wraper navbar-expand-lg ${isFixed && styles.is_fixed}`}>
             <div className={`${styles.main_bar} ${bg}`}>
+                
                 <Container>
                     {/*<!-- website logo -->*/}
                      {/*<!-- nav toggle button -->*/}

@@ -47,7 +47,7 @@
 
 .blockquote{
     font-size: 16px;
-    border-left: 10px solid #ef3139;
+    border-left: 10px solid #3a3a3a;
     padding-left: 30px;
     font-style: italic;
     display: block;
@@ -88,7 +88,7 @@
 }
 .box_3 h6 b{
     font-size: 30px;
-    color: #ef3139 ;
+    color: #3a3a3a ;
 }
 
 /* box_3 second column*/
@@ -102,7 +102,7 @@
     width: 120px;
     height: 120px;
     line-height: 120px;
-    background: #ef3139;
+    background: #3a3a3a;
     color: #ffffff;
     display: inline-block;
     border-radius: 50%;
@@ -128,7 +128,7 @@
     color: rgb(103, 108, 113);
 }
 .badge a{
-    color: #ef3139;
+    color: #3a3a3a;
     padding: 0;
     font-size: 14px;
     font-weight: bold;

@@ -51,7 +51,7 @@
 }
 .foot_box1 a{
     outline: medium none;
-    color: #ef3139;
+    color: #3a3a3a;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
@@ -67,7 +67,7 @@
 }
 
 .foot_details h5{
-    color:#ef3139;
+    color:#3a3a3a;
     font-size: 18px;
     margin: 0px 0px 1rem;
     font-weight: bold;
@@ -110,7 +110,7 @@
 }
 .foot_box2_items p a{
     outline: medium none ;
-    color: #ef3139;
+    color: #3a3a3a;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
 }

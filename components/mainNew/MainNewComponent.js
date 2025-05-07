@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { color, motion } from 'framer-motion';
+import LazyAutoplayVideo from './LazyAutoplayVideo';
 const MainNewComponent = () => {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
@@ -44,8 +45,9 @@ const MainNewComponent = () => {
       const textLeave = () => setCursorVariant("default");
     return (
         <section className={styles.main_new_sec}>
-            <Container className={styles.main_new_con}>
-                <div className={styles.pro_box}>
+            <div className={styles.main_new_con}>
+            <Container>
+            <div className={styles.pro_box}>
                     <Row>
                         <Col md="6">
                             <div className={styles.leftTitle}>
@@ -67,13 +69,16 @@ const MainNewComponent = () => {
                             </div>
                         </Col>
                         <Col md="6">
-                            <div className={styles.rightInfo}>
-                                <img src={'/images/slider/kam16-white.gif'} />
-                            </div>
+                            
                           </Col>
                     </Row>
                 </div>
             </Container>
+                
+            </div>
+            <div className={styles.rightInfo}>
+                                <LazyAutoplayVideo video1={'images/slider/kamSlide.mp4'}/>
+                            </div>
         </section>
     )
 }

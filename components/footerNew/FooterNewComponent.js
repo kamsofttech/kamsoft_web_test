@@ -23,8 +23,8 @@ const footerNew = () => {
                                
                                     <h5>Head office</h5>
                                     <p>214 West Arnold St. New York, NY 10002</p>
-                                    <p><FontAwesomeIcon icon={faWhatsapp} style={{ color: "#ef3139" }} /> +(704) 279-1249</p>
-                                    <p><FontAwesomeIcon icon={faEnvelope} style={{ color: "#ef3139" }} /> letstalk@hisoft.com</p>
+                                    <p><FontAwesomeIcon icon={faWhatsapp} style={{ color: "#3a3a3a" }} /> +(704) 279-1249</p>
+                                    <p><FontAwesomeIcon icon={faEnvelope} style={{ color: "#3a3a3a" }} /> letstalk@hisoft.com</p>
                                     <h4><a> +(704) 279-1249</a></h4>
                                 </Col>
                         </Row>

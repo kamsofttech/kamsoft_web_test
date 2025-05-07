@@ -35,7 +35,7 @@
 .teamInfo a:hover{
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-    color: #ef3139;
+    color: #3a3a3a;
 }
 .teamInfo p{
     font-size: 11px;

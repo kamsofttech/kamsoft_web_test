@@ -31,7 +31,7 @@
     margin-top: 0;
 }
 .left_title h3{
-    color: #ef3139 !important;
+    color: #3a3a3a !important;
     font-weight: 700 !important;
     margin-bottom: 0 !important;
     line-height: 1.2;
@@ -81,7 +81,7 @@
   
   /* Hover Effect */
   .tab_container :global(.ant-tabs-tab):hover .tab_title {
-    color: #ef3139 !important;
+    color: #3a3a3a !important;
     background: transparent !important;
     -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
     transform: translate3d(0px, 0px, -30px) rotateX(90deg);
@@ -132,7 +132,7 @@
  
   /* Active Tab */
   .tab_container :global(.ant-tabs-tab-active) .tab_title{
-    color: #ef3139 !important;
+    color: #3a3a3a !important;
     background: transparent !important;
     ;
   }

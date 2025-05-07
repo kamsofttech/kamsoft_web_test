@@ -1,0 +1,71 @@
+.topExtra {
+    padding: 8px 0px;
+
+    cursor: pointer;
+    border-bottom: 1px solid rgba(2, 45, 98, 0.1);
+}
+.forfl {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+.for_full_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.for_second {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.for_first {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+    margin-right: auto;
+}
+.forfl h6 {
+    margin-bottom: 0px;
+    color: #3a3a3a;
+    font-size: 13px;
+    font-weight: 500;
+}
+.for_second h6 {
+    margin-bottom: 0px;
+    color: #3a3a3a;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.forfl i {
+    color: #3a3a3a;
+}
+.for_second i {
+    color: #3a3a3a;
+    position: relative;
+    bottom: 2px;
+
+}
+.for_second i:hover {
+    color: #3bb64a;
+}
+.for_second h6:hover {
+    color: #3bb64a;
+}
+
+@media (max-width: 476px) {
+    .for_first{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: auto;
+        gap: 4px;
+    }
+
+    .for_full_flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

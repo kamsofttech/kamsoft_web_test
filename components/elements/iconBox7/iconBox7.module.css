@@ -1,6 +1,6 @@
 .iconBox7{
-    background-color: #f6f6f6;
-    border-radius: 5px;
+    /* background-color: #f6f6f6;
+    border-radius: 5px; */
     height: 100%;
     padding-top: 0px;
     padding-left: 1.5rem;
@@ -8,21 +8,36 @@
     display: flex;
     align-items: flex-end;
     margin-top: 1rem;
+    z-index: 1;
+    position: relative;
+}
+.iconBox7::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    background-image: radial-gradient(#626262 10%, transparent 10%);
+    background-size: 5px 5px;
+    z-index: 0;
 }
 
 .iconBox7 h5{
-    color: #1dbb26;
+    color: #3a3c3a;
     margin: 0px 0px 1rem;
     font-weight: bold;
     line-height: 1.2;
-    font-size: 18px;
+    font-size: 30px;
 }
 .iconBox7year{
     color: transparent ;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ef3139;
-    font-weight: bold 700px;
+    -webkit-text-stroke-color: #1dbb26;
+    font-weight: bold;
     display: block;
-    display: 2;
+    
     font-size: 4.5rem;
 }

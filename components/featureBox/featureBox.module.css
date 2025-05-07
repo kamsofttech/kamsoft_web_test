@@ -58,7 +58,7 @@
    
     z-index: -1;
     opacity: 0.8;
-    background-color: #ef3139;
+    background-color: #3a3a3a;
 }
 
 .getStartedBox a:hover{
@@ -71,6 +71,6 @@
     z-index: 1;
     color: #fff;
     transition: all 0.3s ease-in-out;
-    background-color: #ef3139;
+    background-color: #3a3a3a;
 
 }

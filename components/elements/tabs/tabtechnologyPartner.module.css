@@ -61,7 +61,7 @@
     transition: all 0.3s ease-in-out;
     z-index: -1;
     opacity: 0.8;
-    background-color: #ef3139;
+    background-color: #3a3a3a;
 }
 .button a:hover:before{
     width: 100%;

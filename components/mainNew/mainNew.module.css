@@ -1,12 +1,17 @@
 .main_new_sec {
-    /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
-    background-color: #3a3a3a ;
+    position: relative;
+    height: 453px;
+    
+}
+.main_new_con{
+    background: url(/images/slider/slideBack.png) no-repeat scroll center center;
+    background-color: #3a3a3a00 ;
     background-size: cover;
     position: relative;
     overflow:hidden;
-    
+    z-index: 1;
+    height: 453px;
 }
-
 @media (max-width: 476px) {
 .main_new_con {
     
@@ -14,13 +19,12 @@
 }
 
 .pro_box{
-    display: flex;
-    align-items: stretch;
+    position: relative;
 }
 
 .leftTitle{
     /* padding-bottom: 5rem; */
-    padding-top: 5rem;
+    padding-top: 3rem;
     order:1;
     flex: 0 0 auto;
     padding-right: 150px;
@@ -67,8 +71,10 @@
 }
 
 .rightInfo{
-    display: flex;
-    align-items: stretch;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
     
 }
 .rightInfo img{

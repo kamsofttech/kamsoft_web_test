@@ -38,7 +38,7 @@
     vertical-align: middle;
 }
 .counterBox{
-    background: #ef3139;
+    background: #3a3a3a;
     padding: 42.4px;
     text-align: center;
     display: block;
@@ -110,8 +110,8 @@
       -45deg,
       #ff5733,
       #ff5733 10px,
-      #ef3139 10px,
-      #ef3139 20px
+      #3a3a3a 10px,
+      #3a3a3a 20px
     );
     animation: progressAnimation 4s linear infinite;
   }
@@ -176,7 +176,7 @@
     
   }
   .rating_box span{
-    color: #ef3139;
+    color: #3a3a3a;
   }
 
   .column2_row2{

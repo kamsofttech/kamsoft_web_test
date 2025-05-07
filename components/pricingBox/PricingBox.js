@@ -22,7 +22,7 @@ const PricingBox = () => {
                     <Col><PricingElement pricing_title={"Standard"} plan_desc={"When you are ready to grow, We will grow with you. Get a Standard plan"}
                         price={"39"} items={["30 Analytics Campaign", "Branded Reports", "700 Keywords",
                             "100 Social Account", "Phone & Email Support"]} h_color=" #ffffff" p_color=" #ffffff"
-                        price_color=" #ef3139" bgcolor="#1dbb26"/></Col>
+                        price_color=" #3a3a3a" bgcolor="#1dbb26"/></Col>
 
                     <Col><PricingElement pricing_title={"Professional"} plan_desc={"Ready to kick it up a notch? Go for big with Professional membership"}
                         price={"69"} items={["50 Analytics Campaign", "Branded Reports", "900 Keywords",

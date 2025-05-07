@@ -17,7 +17,7 @@
       }
 
       .cls-2 {
-        fill: #ef3139;
+        fill: #3a3a3a;
       }
 
       .cls-3, .cls-4 {
@@ -25,7 +25,7 @@
       }
 
       .cls-3 {
-        fill: #ef3139;
+        fill: #3a3a3a;
       }
 
       .cls-4 {

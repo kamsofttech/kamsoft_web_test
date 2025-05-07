@@ -39,7 +39,7 @@ const PerfomanceComponent = () => {
               <div className={styles.column2}>
                 <h2>We enable constant enterprise transformation at speed and scale.</h2>
                 <div className={styles.progress}>
-                  <Progress percent={95} strokeColor={'#ef3139'} />
+                  <Progress percent={95} strokeColor={'#3a3a3a'} />
 
                 </div>
               </div>

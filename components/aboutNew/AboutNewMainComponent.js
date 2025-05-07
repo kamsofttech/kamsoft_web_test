@@ -8,6 +8,8 @@ import IconBox4Component from '../elements/iconBox4/IconBox4Component'
 import IconBox5Component from '../elements/iconBox5/IconBox5Component'
 import IconBox7Component from '../elements/iconBox7/IconBox7Component'
 import IconBox6Component from '../elements/iconBox6/IconBox6Component'
+import LazyAutoplayVideo from '../mainNew/LazyAutoplayVideo'
+import GlobeVideo from '../intro/GlobeVideo'
 const AboutNewMainComponent = () => {
   return (
     <section className={styles.about_new_sec}>
@@ -31,10 +33,13 @@ const AboutNewMainComponent = () => {
             <Col lg='3' md='4'className={styles.iconBox5}>
               <IconBox5Component title={"Award-winning solution"} awardDesc={"We've got a few awards thanks to our amazing clients."} />
             </Col>
-            <Col lg='3' md='4'className={styles.iconBox6}>
-              <IconBox6Component />
+            <Col lg='3' md='4' className={styles.iconBox6}>
+            <GlobeVideo video1={'images/intro/glob.mp4'}/>
+            
+              
             </Col>
             <Col lg='3' md='4'className={styles.iconBox7}>
+            
               <IconBox7Component year={"2002"} />
             </Col>
           </Row>

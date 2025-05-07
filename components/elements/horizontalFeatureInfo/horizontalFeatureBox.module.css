@@ -13,7 +13,7 @@
     background: #d2d0d0;
 }
 .feature_info_item:hover .feature_info_num span{
-    background-color: #ef3139;
+    background-color: #3a3a3a;
     color: #ffffff;
 }
 .feature_info_num span{
@@ -51,7 +51,7 @@
  }
  .feature_info_item:hover .feature_info_num span:after{
     transition: all 0.3s ease-in-out;
-    border-left-color: #ef3139;
+    border-left-color: #3a3a3a;
 }
 .feature_info_content{
     transition: all 0.3s ease-in-out;
