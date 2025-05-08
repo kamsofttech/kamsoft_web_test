@@ -1,3 +1,27 @@
+.pf_sec {
+    /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    position: relative;
+    
+}
+.pf_con{
+    padding: 30px 0;
+}
+.pf_sec::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #3a3a3a;
+    background-image: radial-gradient(#1dbb2645  10%, transparent 10%);
+    background-size: 5px 5px;
+    z-index: 0;
+}
 @media (min-width: 992px) {
     .row1 {
         margin-bottom: 1rem !important;
@@ -10,4 +34,101 @@
 }
 .portfolio_section{
     padding: 0 0 100px;
+}
+.pf_left_box{
+    position: relative;
+    z-index: 1;
+    margin-top: -10rem;
+}
+.pf_title{
+    background: #f3f3f3;
+    padding: 0.8rem;
+    text-align: center;
+}.pf_title>h3{
+    margin-bottom: 0;
+    color: #3a3a3a;
+}
+.pf_right_box{
+    position: relative;
+    z-index: 1;
+}
+.pf_item{
+    position: relative;
+    overflow: hidden;
+}
+.pf_img{
+    
+}
+.pf_info{
+    padding: 20px;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    background: #ffffff;
+}
+.pf_left_box:hover .pf_info {
+    opacity: 1;
+    bottom: 20px;
+}
+.icon_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #ef3139;
+    border-radius: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff; }
+  
+  .icon_btn {
+    opacity: 1;
+}
+.icon_btn:hover {
+    color: #022d62 !important;
+    text-decoration: none !important;
+}
+.pf_info_title{
+    display: block;
+    color: #022d62;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pf_info_subTitle {
+    display: block;
+    color: #022d62;
+    margin-bottom: 10px;
+}
+.lbox_top_cont>h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.lbox_top_cont>span{
+    color: transparent !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  display: block;
+  font-size: 5.5rem;
+}
+.rbox_btm_cont p{
+line-height: 1.8;
+color: #fff;
 }

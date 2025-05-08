@@ -5,7 +5,35 @@
     padding-top: 100px;
     
 }
-
+.tabTitle{
+    border: none;
+    color: #3a3a3a;
+    font-weight: 700;
+    background: #f6f6f6;
+    border-radius: 50px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    padding: 12px 28px;
+    
+}
+.tabTitle:hover{
+    color: #ffffff;
+    background: #3a3a3a;
+}
+.serTab :global(.ant-tabs-tab.ant-tabs-tab-active) .tabTitle {  
+    color: #fff;  
+    background-color: #3a3a3a;  
+}
+.serTab :global(.ant-tabs .ant-tabs-tab.ant-tabs-tab-focus .ant-tabs-tab-btn) {  
+     outline: 0px solid #91caff00;
+} 
+/* .ant-tabs .ant-tabs-tab.ant-tabs-tab-focus .ant-tabs-tab-btn {
+    outline: 3px solid #91caff00;
+    outline-offset: 1px;
+    transition: outline-offset 0s, outline 0s;
+} */
+.serTab :global(.ant-tabs-nav::before){  
+    content: none !important;
+}
 @media (max-width: 991px) {
     .our_serviceNew_sec{
         padding-top: 70px;

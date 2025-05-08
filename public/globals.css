@@ -404,3 +404,8 @@ ul {
   -ms-transform: translateX(150%);
   -o-transform: translateX(150%);
 }
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-focus .ant-tabs-tab-btn {
+  outline: 3px solid #91caff00;
+  outline-offset: 1px;
+  transition: outline-offset 0s, outline 0s;
+}

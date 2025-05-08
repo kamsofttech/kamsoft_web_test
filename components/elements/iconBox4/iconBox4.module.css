@@ -44,10 +44,10 @@
 .ratingBox h5{
   color: #fff;
   font-size: 18px;
-  font-weight: bold;
+ 
   line-height: 1.2;
 }
 
 .ratingBox h5 span{
-  color: #3a3a3a
+  color: #ffc107
 }

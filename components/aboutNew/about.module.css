@@ -3,8 +3,11 @@
     background-color: #fff;
     background-size: cover;
     position: relative;
-    padding-top: 100px;
     
+    
+}
+.about_new_con{
+    padding: 100px 0;
 }
 .iconBox6{
     position: relative;

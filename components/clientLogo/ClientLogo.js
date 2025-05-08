@@ -11,13 +11,9 @@ const ClientLogo = () => {
     return (
         <section className={styles.client_logo_section}>
             <Container className={styles.client_logo_container}>
-                <Row className={styles.row}>
-                    <Col xl="3" lg="4" md="4">
-                        <div className={styles.desc_text}>
-                            <h5>Awards and Nominees</h5>
-                        </div>
-                    </Col>
-                    <Col xl="9" md="8">
+                <Row  className={styles.row}>
+                    
+                    <Col lg={7} className={styles.offset_lg_4}>
                         <Swiper
 
                             slidesPerView={3}
@@ -31,8 +27,8 @@ const ClientLogo = () => {
 
 
                             modules={[Autoplay, Pagination, Navigation, FreeMode]}
-                            className="mySwiper" >
-                            <SwiperSlide ><img src="/images/award-logo/01.svg" style={{filter: 'grayscale(100%)'}}/></SwiperSlide>
+                            className={`${styles.client_swiper} mySwiper`} >
+                            <SwiperSlide ><img src="/images/award-logo/01.svg"/></SwiperSlide>
                             <SwiperSlide><img src="/images/award-logo/02.svg" /></SwiperSlide>
                             <SwiperSlide><img src="/images/award-logo/03.svg" /></SwiperSlide>
                             <SwiperSlide><img src="/images/award-logo/04.svg" /></SwiperSlide>

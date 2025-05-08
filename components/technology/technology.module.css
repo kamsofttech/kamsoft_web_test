@@ -1,0 +1,24 @@
+.tech_sec {
+    /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    position: relative;
+    
+}
+.tech_con{
+    padding: 80px 0;
+}
+.tech_sec::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #3a3a3a;
+    background-image: radial-gradient(#1dbb2645  10%, transparent 10%);
+    background-size: 5px 5px;
+    z-index: 0;
+}

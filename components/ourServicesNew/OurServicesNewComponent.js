@@ -6,101 +6,52 @@ import TitleNewComponent from '../elements/titleNew/TitleNewComponent'
 import ImageComponent from '../elements/imageComponent/ImageComponent'
 import ChecklistComponent from '../elements/checklist/ChecklistComponent'
 import NumberChecklist from '../elements/numberedChecklist/NumberChecklist'
-
+import HeadingDefault from '../headingNew/HeadingDefault'
+import { Tabs } from 'antd';
+import WebsiteTabComponent from './WebsiteTabComponent'
+import SeoTabComponent from './SeoTabComponent'
+import ErpTabComponent from './ErpTabComponent'
+import AndroidTabComponent from './AndroidTabComponent'
 const OurServicesNewComponent = () => {
+  const onChange = key => {
+    console.log(key);
+  };
+  const items = [
+    {
+      key: '1',
+      label: <div className={styles.tabTitle}><a>Web App Development</a></div>,
+      children: <WebsiteTabComponent/>,
+    },
+    {
+      key: '2',
+      label: <div className={styles.tabTitle}><a>Search Engine Optimization</a></div>,
+      children: <SeoTabComponent/>,
+    },
+    {
+      key: '3',
+      label: <div className={styles.tabTitle}><a>Android Development</a></div>,
+      children:<AndroidTabComponent/>,
+    },
+    
+    {
+      key: '4',
+      label: <div className={styles.tabTitle}><a>ERP Solution</a></div>,
+      children: <ErpTabComponent/>,
+    },
+  ];
   return (
     <section className={styles.our_serviceNew_sec}>
       <Container className={styles.our_serviceNew_con}>
         <div className='pro_box_1'>
-          <HeadingNew main_title={'Digital marketing services that help you grow.'} sub_title={'We take pride in helping our clients deliver marvelous results when it comes to their projects. From data to performance, we’ve got you covered.'} />
+          <HeadingDefault main_title={'Digital marketing services that help you grow.'} sub_title={'We take pride in helping our clients deliver marvelous results when it comes to their projects. From data to performance, we’ve got you covered.'} />
 
           <div className='box_1'>
-            <Row>
-              <Col md="6">
-                <div className={styles.box_1}>
-                  <TitleNewComponent sub_title={"Increase Organic Traffic"} main_title={"Digital strategy"} desc={"Success isn’t really that difficult. There is a significant portion of the population here in North America, that actually want and need success to be hard! Why? So they then have a built-in excuse when things don’t go their way!"} />
-                  <br />
-                  <blockquote className={styles.blockquote}>
-                    For those of you who are serious about having more, doing more, giving more and being more, success is achievable with some understanding of what to do.
-                    <cite className={styles.b_cite}> - InVisionApp Inc</cite>
-                  </blockquote>
-                  <a className={styles.view} href="#">View case study</a>
-                </div>
-              </Col>
-              <Col md="6">
-                <div>
-                  <ImageComponent image={'/images/feature-info/01.jpg'} />
-                </div></Col>
-            </Row>
+          <Tabs indicator={{size:0}} className={styles.serTab} centered defaultActiveKey="1" items={items} onChange={onChange} />
+            
           </div>
-          <div className={styles.full_box_2}>
-            <Row>
-              <Col md="6">
-                <ImageComponent image={'/images/feature-info/02.jpg'} />
-                </Col>
-              <Col md="6">
-                <div className={styles.box_2}>
-                  <TitleNewComponent sub_title={"Speed up you website"} main_title={"Search Engine Optimization"} desc={"So you have a website but no one visiting it? Use a past defeat as a motivator. Remind yourself you have nowhere to go except up as you have already been at the bottom. This process is implemented in several ways. Here are a few examples: "} />
-                  <ChecklistComponent items={["  We make sure that the right keyword is in the page title. ",
-                    "  We make sure that the right keyword is in the meta description. ",
-                    "  We make sure that the right keyword is in the HTML heading tag. ",
-                    "  The keyword must be relevant to your industry. ",
-                    "  It cannot be “Copied” from another website. "
-                  ]} />
-                </div></Col>
-            </Row>
-          </div>
-          <div className={styles.full_box_3}>
-            <Row>
-              <Col md="3">
-                <div className={styles.box_3}>
-                  <TitleNewComponent sub_title={"Increase your Revenue"} main_title={"E-commerce Solutions"} />
-                  <NumberChecklist
-                    numbers={["01", "02", "03", "04", "05"]}
-                    points={["Hassle-free setup & administration",
-                      "Customizable as required",
-                      "Lifetime free update",
-                      "Robust admin & reporting features",
-                      "Six months FREE support for bugs", null
-                    ]} />
-                  <h6>Package start from<b>$600</b></h6>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className={styles.badge}>
-                  <div className={styles.badgeRound}>
-                    <h4><span>30+</span>Million</h4>
-                  </div>
-                  <p>Revenue generated by our partner and clients since 2005</p>
-                  <a href="#">View Case Study</a>
-                </div>
-              </Col>
-              <Col md="6"><ImageComponent image={'/images/feature-info/06.jpg'} />
-              </Col>
-            </Row>
-
-          </div>
-          <div className={styles.full_box_4}>
-            <Row>
-              <Col md="6">
-                <ImageComponent image={'/images/feature-info/04.jpg'} /></Col>
-              <Col md="6">
-                <div className={styles.box_4}>
-                  <TitleNewComponent sub_title={"Years of experience "} main_title={"Website development"} desc={"The following outlines our web-development process, which can be split into several sensible elements:"} />
-                  <NumberChecklist
-                    numbers={["01", "02", "03", "04", "05", "06"]}
-                    points={["Technical analysis",
-                      "Planning and Idea",
-                      "Design and Copywriting",
-                      "Front- & Back-End Coding",
-                      "Quality Assurance",
-                      "Testing and Launch"
-                    ]} />
-
-                </div></Col>
-            </Row>
-
-          </div>
+          
+          
+          
         </div>
       </Container>
     </section>
