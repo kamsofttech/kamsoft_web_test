@@ -14,7 +14,7 @@ const ProcessBox = () => {
                 <div className={styles.section_title}>
                     <h2>Smart strategy & excellent performance</h2>
                     <p>Process that guarantees high productivity and profitability for your solution.</p>
-                    <a href="">Let's Start Project <FontAwesomeIcon icon={faArrowRight}/></a>
+                    <a href="">Lets Start Project <FontAwesomeIcon icon={faArrowRight}/></a>
                 </div>
                 </Col>
                 <Col md="6">

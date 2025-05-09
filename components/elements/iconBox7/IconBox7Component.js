@@ -4,7 +4,7 @@ import styles from './iconBox7.module.css'
 const IconBox7Component = ({year}) => {
   return (
     <div className={styles.iconBox7}>
-        <h5>We're epic
+        <h5>We are epic
             <br/>
             since
             <br/>
