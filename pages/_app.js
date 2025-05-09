@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  '../public/globals.css';
+import  '../public/flaticon.css';
 import '../public/fontawesome/css/all.min.css';
 import { withRouter, Router, useRouter } from 'next/router'
 import { Provider } from 'react-redux'

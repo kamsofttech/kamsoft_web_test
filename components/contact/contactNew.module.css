@@ -1,0 +1,43 @@
+.cont_sec {
+    /*background: url(/images/bg/bg1.jpg) no-repeat scroll center center;*/
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0 0;
+    overflow: hidden;
+   
+    
+}
+.cont_con{
+    padding: 80px 0;
+}
+.cont_row{
+    justify-content: center;
+}
+.cont_form{
+    padding: 50px;
+    background-color: #f6f6f6 
+}
+.form_box{
+
+}
+.form_box :global(.ant-input-outlined):hover {
+    border-color: #1dbb26;
+    background-color: #ffffff;
+}
+.form_box :global(.ant-input-outlined):focus-within {
+    border-color: #1dbb26;
+    
+}
+.cont_right{
+    border: 1px solid #dee2e6 !important;
+    height: 100%;
+    
+}
+.contHead{
+    position: relative;
+padding: 50px 50px 40px;
+}
+.cont_right h2{
+    color: #1dbb26;
+}

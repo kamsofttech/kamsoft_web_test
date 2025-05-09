@@ -3,6 +3,7 @@ import AboutNewMainComponent from "@/components/aboutNew/AboutNewMainComponent";
 import ActionBoxComponent from "@/components/actionBox/ActionBoxComponent";
 import CaseStudyComponent from "@/components/caseStudy/CaseStudyComponent";
 import ClientLogo from "@/components/clientLogo/ClientLogo";
+import ContactNewComponent from "@/components/contact/ContactNewComponent";
 import DisplayTabs from "@/components/displayTabs/DisplayTabs";
 import FeatureBoxComponent from "@/components/featureBox/FeatureBoxComponent";
 
@@ -40,6 +41,7 @@ const Home = () => {
       <FeatureBoxComponent />
       <PerfomanceComponent /> */}
       <TestimonialNewComponent />
+      <ContactNewComponent/>
       {/* <ServicesImage/>
       <CaseStudyComponent/> */}
       {/* <DisplayTabs/> */}
