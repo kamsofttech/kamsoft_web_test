@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { color, motion } from 'framer-motion';
 import LazyAutoplayVideo from './LazyAutoplayVideo';
+import { useUserContext } from '../context/UserContext';
 const MainNewComponent = () => {
+  const{sec1,setSec1}=useUserContext()
+  const  sec1Ref=React.useRef('')
+  setSec1(sec1Ref)
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -44,7 +48,7 @@ const MainNewComponent = () => {
       const textEnter = () => setCursorVariant("text");
       const textLeave = () => setCursorVariant("default");
     return (
-        <section className={styles.main_new_sec}>
+        <section id='sec1' ref={sec1Ref} className={styles.main_new_sec}>
             <div className={styles.main_new_con}>
             <Container>
             <div className={styles.pro_box}>
@@ -59,7 +63,7 @@ const MainNewComponent = () => {
                                     animate={cursorVariant}
                                 />
                                         <div className={styles.leftInfo}>
-                                    <h4>+(704) 279-1249</h4>
+                                    <h4>+(91) 9423879030</h4>
                                     <ul>
                                         <li><a><FontAwesomeIcon icon={faFacebook} style={{ color: "white" }} /></a></li>
                                         <li><a><FontAwesomeIcon icon={faTwitter} style={{ color: "white" }} /></a></li>

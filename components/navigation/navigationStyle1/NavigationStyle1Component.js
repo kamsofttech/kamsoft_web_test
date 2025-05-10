@@ -8,8 +8,11 @@ import { selectMenuItem } from '@/redux/menu/menuSelector';
 import { connect } from 'react-redux';
 import { setProductItem, setProductTabKey, setSubCatData } from '@/redux/menu/menuActions';
 import { data } from 'autoprefixer';
+import { useUserContext } from '@/components/context/UserContext';
 const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,setProductItem,setSubCatData}) => {
     const router=useRouter()
+    const {sec1,sec2,sec3,sec4 } = useUserContext()
+    console.log('user',router)
     const [menuId,setMenuId]=React.useState('0')
     const [subMenuId,setSubMenuId]=React.useState('')
     const [arrowType,setArrowType]=React.useState('arrow_left')
@@ -18,14 +21,22 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
     const [subMenuCLick,setSubMenuCLick]=React.useState(false)
    // const{headers}=menuItems.data
     const [menuItem,setMenuItem]=React.useState('')
-    const onMenuClick=(id,routeName)=>{
+    const onMenuClick=(id,routeName,secId)=>{
         if (btnClick) {
             setSubMenuId('') 
             setSubMenuCLick(!subMenuCLick) 
            setMenuId(id) 
            setMenuCLick(!menuCLick)
         }
-        router.push(`/${routeName=='home'?'/':routeName}`)
+        if(router.pathname=='/'){
+            //routeName.current.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo(0,routeName.current.offsetTop-80)
+        }else{
+            router.push(`/#${secId}`)
+            //window.scrollTo(0,routeName.current.offsetTop-80)
+        }
+        
+        //router.push(`/${routeName=='home'?'/':routeName}`)
     }
     const onSubMenuClick=(id)=>{
         if (btnClick) {
@@ -96,7 +107,7 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
         <>
 
             <ul className={`${styles.nav} navbar-nav`}>
-                {menuItem && menuItem.headerMenuItems.map((m,mix)=>{
+                {/* {menuItem && menuItem.headerMenuItems.map((m,mix)=>{
                     if (m.children.length==0) {
                         return(
                             <li key={mix} className={menuId==mix ?`${styles.active} ${styles.menuOpen}`:``}>
@@ -121,17 +132,21 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
                     
                 }
             
-            )}
-               {/* <li  className={menuId=='1' ?`${styles.active} ${styles.menuOpen}`:``}>
-                    <a onClick={()=>onMenuClick('1')}>Home</a>
-
-                </li>
-                <li className={menuId=='2' ?`${styles.active} ${styles.menuOpen}`:``}>
-                    <a onClick={()=>onMenuClick('2')}>About Us</a>
+            )} */}
+               <li  className={menuId=='1' ?`${styles.active} ${styles.menuOpen}`:``}>
+                    <a onClick={()=>onMenuClick('1',sec1,'sec1')}>Home</a>
                     
-                </li>*/}
-               
-
+                </li>
+                
+                <li className={menuId=='3' ?`${styles.active} ${styles.menuOpen}`:``}>
+                    <a onClick={()=>onMenuClick('3',sec2,'sec2')}>Our Expertise</a>
+                </li>
+                <li className={menuId=='4' ?`${styles.active} ${styles.menuOpen}`:``}>
+                    <a onClick={()=>onMenuClick('4',sec3,'sec3')}>Services & Solutions</a>
+                </li>
+                <li className={menuId=='5' ?`${styles.active} ${styles.menuOpen}`:``}>
+                    <a onClick={()=>onMenuClick('5',sec4,'sec4')}>Portfolios</a>
+                </li>
                 {/*<li className={menuId=='4' ?`active ${styles.menuOpen} ${styles.has_mega_menu}`:`${styles.has_mega_menu}`} > <a onClick={()=>onMenuClick('4')}>Our Products <i className={`fa fa-chevron-down`}></i> </a>
                     <ul className={styles.mega_menu}  style={{display:btnClick?menuId=='4' ?'block':'none':"flex"}}>
 									<li><a >Product e-Brochure</a>

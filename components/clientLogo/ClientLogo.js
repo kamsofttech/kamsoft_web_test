@@ -6,10 +6,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
+import { useUserContext } from '../context/UserContext';
 
 const ClientLogo = () => {
+    const{sec4,setSec4}=useUserContext()
+          const  sec4Ref=React.useRef('')
+          setSec4(sec4Ref)
     return (
-        <section className={styles.client_logo_section}>
+        <section id='sec4' ref={sec4Ref} className={styles.client_logo_section}>
             <Container className={styles.client_logo_container}>
                 <Row  className={styles.row}>
                     

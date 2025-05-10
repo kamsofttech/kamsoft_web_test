@@ -3,9 +3,13 @@ import styles from './technology.module.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import HeadingNew from '../headingNew/HeadingNew'
 import TechBoxComponent from './TechBoxComponent'
+import { useUserContext } from '../context/UserContext'
 const TechnologyComponent = () => {
+  const{sec2,setSec2}=useUserContext()
+    const  sec2Ref=React.useRef('')
+    setSec2(sec2Ref)
   return (
-    <section className={styles.tech_sec}>
+    <section  id={'sec2'} ref={sec2Ref} className={styles.tech_sec}>
       <Container className={styles.tech_con}>
       <HeadingNew  main_title={'Our Expertise - What we have others Don’t'} sub_title={'We have expertise in all technology stacks and can adapt your product to meet your users’ requirements and the market’s needs.'} />
         <div className={styles.tech_cont}>

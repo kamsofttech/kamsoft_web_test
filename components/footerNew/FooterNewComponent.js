@@ -46,7 +46,7 @@ const footerNew = () => {
                                     <h5>Head office</h5>
                                     <p><FontAwesomeIcon icon={faLocationDot} style={{ color: "#1dbb26" }} /> Bhumika Gr.floor, Opp.Maimolem Lake, Vasco-da-gama, Goa-403802 ,India</p>
                                     <p><FontAwesomeIcon icon={faWhatsapp} style={{ color: "#1dbb26" }} /> +(91) 9423879030</p>
-                                    <p><FontAwesomeIcon icon={faEnvelope} style={{ color: "#1dbb26" }} /> letstalk@hisoft.com</p>
+                                    <p><FontAwesomeIcon icon={faEnvelope} style={{ color: "#1dbb26" }} /> mail@kamsoft.co.in</p>
                                     <h4><a> +(91) 9423879030 / 7756036120</a></h4>
                                 </Col>
                         </Row>

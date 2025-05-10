@@ -1,18 +1,18 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from './ourServicesNew.module.css'
-import HeadingNew from '../headingNew/HeadingNew'
-import TitleNewComponent from '../elements/titleNew/TitleNewComponent'
-import ImageComponent from '../elements/imageComponent/ImageComponent'
-import ChecklistComponent from '../elements/checklist/ChecklistComponent'
-import NumberChecklist from '../elements/numberedChecklist/NumberChecklist'
+
 import HeadingDefault from '../headingNew/HeadingDefault'
 import { Tabs } from 'antd';
 import WebsiteTabComponent from './WebsiteTabComponent'
 import SeoTabComponent from './SeoTabComponent'
 import ErpTabComponent from './ErpTabComponent'
 import AndroidTabComponent from './AndroidTabComponent'
+import { useUserContext } from '../context/UserContext'
 const OurServicesNewComponent = () => {
+  const{sec3,setSec3}=useUserContext()
+      const  sec3Ref=React.useRef('')
+      setSec3(sec3Ref)
   const onChange = key => {
     console.log(key);
   };
@@ -40,7 +40,7 @@ const OurServicesNewComponent = () => {
     },
   ];
   return (
-    <section className={styles.our_serviceNew_sec}>
+    <section id='sec3' ref={sec3Ref} className={styles.our_serviceNew_sec}>
       <Container className={styles.our_serviceNew_con}>
         <div className='pro_box_1'>
           <HeadingDefault main_title={'Digital marketing services that help you grow.'} sub_title={'We take pride in helping our clients deliver marvelous results when it comes to their projects. From data to performance, we’ve got you covered.'} />

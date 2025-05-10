@@ -7,8 +7,11 @@ import { Container } from 'react-bootstrap';
 
 const TopExtraNavComponent = ({ isFixed }) => {
     const router = useRouter()
-    function handleClick() {
-        router.push(`/about-us`)
+    function handleClick(id) {
+        router.push({
+            pathname:'aboutUs',
+            query:{tabKey:id}
+        })
     }
     
     return (
@@ -40,14 +43,18 @@ const TopExtraNavComponent = ({ isFixed }) => {
                                             <div className='icon-box'>
                                                 <i className="fa fa-map-marker" aria-hidden="true"></i>
                                             </div>
-                                            <h6>Bhumika Gr.floor, Opp.Maimolem Lake, Vasco-da-gama, Goa-403802 ,India</h6>
+                                            <h6>Vasco-da-gama, Goa-403802 ,India</h6>
                                             </div>
                                             </div>
-                                        
+                                            
+
                             <div className={styles.for_second}>
-                            <a onClick={()=>router.push(`/`)}><i class="fa-solid fa-house"></i></a>
-                                    <a onClick={()=>router.push(`/about-us`)}><h6>About us</h6></a>
-                                    <a onClick={()=>router.push(`/contact-us`)}><h6>Contact Us</h6></a>
+                            {/* <a onClick={()=>router.push(`/`)}><i class="fa-solid fa-house"></i></a> */}
+                                    <a onClick={()=>handleClick('1')}><h6>About us</h6></a>
+                                    <a onClick={()=>handleClick('2')}><h6>Careers</h6></a>
+                                    <a onClick={()=>handleClick('3')}><h6>News & Media</h6></a>
+                                    <a onClick={()=>handleClick('4')}><h6>FAQ</h6></a>
+                                    <a onClick={()=>handleClick('5')}><h6>Contact Us</h6></a>
                                    
                                     
                                 </div>

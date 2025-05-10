@@ -4,7 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Button, Form,Input,message } from "antd";
 import axios from 'axios';
 import IndustryItem from './IndustryItem';
+import { useUserContext } from '../context/UserContext';
 const ContactNewComponent = () => {
+    const{sec5,setSec5}=useUserContext()
+      const  sec5Ref=React.useRef('')
+      setSec5(sec5Ref)
     const [form] = Form.useForm();
     const [erMsg,setErMsg]=React.useState('')
     const onFinishFailed = (errorInfo) => {
@@ -49,7 +53,7 @@ const ContactNewComponent = () => {
            }
          };
   return (
-    <section className={styles.cont_sec}>
+    <section id='sec5' ref={sec5Ref} className={styles.cont_sec}>
         <Container fluid style={{padding:0}}>
             <Row className={`${styles.cont_row} g-0`}>
                 <Col xl={4} lg={6} md={6}>

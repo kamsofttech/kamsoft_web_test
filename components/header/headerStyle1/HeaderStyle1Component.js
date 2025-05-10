@@ -6,8 +6,10 @@ import { useRouter } from 'next/router';
 import { Button, Space } from 'antd';
 import NavigationStyle1Component from '@/components/navigation/navigationStyle1/NavigationStyle1Component';
 import TopExtraNavComponent from './TopExtraNavComponent';
+import { useUserContext } from '@/components/context/UserContext';
 
 const HeaderStyle1Component = () => {
+    const {sec5,setDisplay } = useUserContext()
     const router=useRouter()
     const[sticky,setSticky]=React.useState(null)
     const[bg,setBg]=React.useState(null)
@@ -21,11 +23,13 @@ const HeaderStyle1Component = () => {
                 //console.log('scorll=', true)
                 setIsFixed('is_fixed')
                 setBg('bg-white')
+                setDisplay('inline-block')
                 
             } else {
                 //console.log('scorll=', false)
                 setIsFixed(null)
                 setBg(null)
+                setDisplay('none')
             }
         }
         window.addEventListener("scroll", handleScroll);
@@ -66,7 +70,7 @@ const HeaderStyle1Component = () => {
                     <div className={styles.extra_nav}>
                     <Space style={{display:btnClick?'none':'flex'}}>
                         <Button size='large' icon={<i className="fa-solid fa-border-none"></i>} className='btn_drawer'/>
-                        <Button size='large' className='btn_primary2'>Let&apos;s Talk</Button>
+                        <Button onClick={()=>router.pathname=='/'?window.scrollTo(0,sec5.current.offsetTop-80):router.push(`/#sec5`)} size='large' className='btn_primary2'>Let&apos;s Talk</Button>
                     </Space>
                         
                     </div>
