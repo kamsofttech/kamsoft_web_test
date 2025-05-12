@@ -7,7 +7,7 @@
 }
 .counterIcon{
     align-self: center !important;
-    color: #dfdfdf;
+    color: #fff;
     margin-right: 25px;
     font-size: 70px;
     line-height: 70px
@@ -16,7 +16,7 @@
     align-self: center !important;
 }
 .counter_content span{
-    color: #1dbb26;
+    color: #fff;
     position: relative;
     font-size: 36px;
     line-height: 36px;
@@ -26,7 +26,7 @@
     display: block;
 }
 .counter_content label{
-    color: #626262;
+    color: #fff;
     display: block;
     margin-bottom: 0;
     font-weight: normal;

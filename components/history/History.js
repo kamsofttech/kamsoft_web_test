@@ -20,7 +20,7 @@ const History = () => {
                 <Row className={styles.row2}>
                     <Col md="10">
                         <div className={styles.timeline}>
-                            <Slider min={2010} max={2020} marks={{ 2010: "2010", 2012: "2012", 2014: "2014", 2016: "2016", 2018: "2018", 2020: "2020"}} step={2} defaultValue={selectedYear} onChange={(value) => setSelectedYear(value)} />
+                            <Slider className={styles.his_slider} min={2010} max={2020} marks={{ 2010: "2010", 2012: "2012", 2014: "2014", 2016: "2016", 2018: "2018", 2020: "2020"}} step={2} defaultValue={selectedYear} onChange={(value) => setSelectedYear(value)} />
                             <div className={styles.event_content}>
                                 <HistoryEvents year={selectedYear} />
                             </div>

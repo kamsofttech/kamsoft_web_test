@@ -3,16 +3,16 @@
     text-align: center !important;
 }
 .sec_title h2{
-    color: #1dbb26;
+    color: #3a3a3a;
     margin: 0px 0px 1rem;
     font-weight: bold;
     line-height: 1.2;
-    font-size: 36px;
+    font-size: 32px;
 }
 .sec_title p{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    
     margin-bottom: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #000000;
 }

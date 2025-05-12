@@ -7,7 +7,7 @@ const CounterElement = ({c_icon,end_num,num,desc}) => {
   return (
     <div className={styles.counterBox}>
         <div className={styles.counterIcon}>
-        <FontAwesomeIcon icon={c_icon} style={{ fontSize: "50px", opacity: 0.5 }} />
+        <FontAwesomeIcon icon={c_icon} style={{ fontSize: "50px", opacity: 0.9 }} />
         </div>
         <div className={styles.counter_content}>
             <span><CountUp enableScrollSpy separator="" delay={1} end={end_num} />{num}</span>

@@ -4,6 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 
 const HistoryEvents = ({year}) => {
     const yearData = {
+      
         2010: {
           title: "2010",
           desc: " They often mean leaving the perception of security in order to discover your personal freedom. These are the changes that will bring happiness and satisfaction into your life. Just go there now.",
@@ -45,13 +46,13 @@ const HistoryEvents = ({year}) => {
     <div className={styles.eventContent}>
         <Row className={styles.row}>
             <Col md="4" className={styles.column1}>
-            <h1>{yearData[year].title}</h1>
+            <h1>{yearData[year]?.title}</h1>
             </Col>
             <Col md="8" className={styles.column2}>
             <div className={styles.timelineText}>
-                <h6>{yearData[year].desc}</h6>
-                <p className={styles.p1}>{yearData[year].italText}</p>
-                <p className={styles.p2}>{yearData[year].secondDesc}</p></div></Col>
+                <h6>{yearData[year]?.desc}</h6>
+                <p className={styles.p1}>{yearData[year]?.italText}</p>
+                <p className={styles.p2}>{yearData[year]?.secondDesc}</p></div></Col>
         </Row>
     </div>
   )

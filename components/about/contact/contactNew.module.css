@@ -21,7 +21,7 @@
     margin: 0px 0px 1rem;
     font-weight: bold;
     line-height: 1.2;
-    font-size: 36px;
+    font-size: 24px;
 }
 .section_title p{
     font-size: 18px;
@@ -53,6 +53,7 @@
   z-index: -1;
   opacity: 0.8;
   background-color: #d2d0d0;
+  
 }
 .section_title a:hover {
     font-size: 14px;
@@ -64,4 +65,52 @@
     z-index: 1;
     transition: all 0.3s ease-in-out;
     background-color: #d2d0d0;
+}
+
+.row1{
+    display: flex;
+    justify-content: center !important;
+}
+.cont_form{
+    padding: 24px;
+    
+}
+.cont_form>h4{
+    font-family: "Archivo", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+.form_box{
+margin-top: 25px;
+}
+.form_box :global(.ant-input-outlined):hover {
+    border-color: #1dbb26;
+    background-color: #ffffff;
+}
+.form_box :global(.ant-input-outlined):focus-within {
+    border-color: #1dbb26;
+    
+}
+.cont_right{
+    border: 1px solid #dee2e6 !important;
+    height: 100%;
+    
+}
+.contHead{
+    position: relative;
+padding: 50px 50px 40px;
+}
+.cont_right h2{
+    color: #1dbb26;
+}
+.feature_info_inner{
+padding: 0 125px;
+}
+.form_box input::placeholder,.form_box textarea::placeholder{
+    color: #00000085;
+}
+.mapTitle{
+    font-size: 35px !important;
+    margin-bottom: 25px !important;
 }

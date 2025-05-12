@@ -41,3 +41,6 @@ padding: 50px 50px 40px;
 .cont_right h2{
     color: #1dbb26;
 }
+.form_box input::placeholder,.form_box textarea::placeholder{
+    color: #00000085;
+}

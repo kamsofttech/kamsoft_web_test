@@ -1,0 +1,54 @@
+.ovBox{
+position: relative;
+overflow: hidden;
+transition: all 0.3s ease-in-out;
+margin-bottom: 30px;
+}
+.ovBox_header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #eeeeee;
+    position: relative;
+}
+.ovBox_header>span{
+    color: #022d62;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.1;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}.ov_title{
+    align-self: center;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #3a3a3a;
+    
+    font-weight: bold;
+}
+.ovBox_header:after {
+    content: "";
+    height: 2px;
+    background: #f6f6f6;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ovBox>p{
+    margin-top: 1.5rem ;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+.ovBox:hover .ovBox_header:after {
+  width: 100%;
+  background: #3a3a3a; }
+
+.ovBox:hover .ovBox_header>span {
+  color: #1dbb26;
+  opacity: 0.5; }

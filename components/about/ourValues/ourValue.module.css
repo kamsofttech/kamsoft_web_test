@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-    .history_container {
+    .ov_container {
         max-width: 1140px;
     }
     .sec_title p{
@@ -7,7 +7,7 @@
         padding-left: 3rem !important;
     }
 }
-.history_section{
+.ov_section{
     padding: 100px 0;
 }
 .row1{
@@ -31,12 +31,4 @@
     margin-bottom: 0;
     line-height: 1.5;
     color: #000000;
-}
-.row2{
-    display:flex;
-    justify-content: center !important;
-}
-.his_slider :global(.ant-slider-mark-text){
-font-weight: 500;
-color: #3a3a3a;
 }

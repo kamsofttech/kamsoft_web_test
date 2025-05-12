@@ -16,7 +16,7 @@
     padding: 130px 0px 0px 0px;
     background-size: cover;
     background-position: center center;
-    z-index: 99;
+ 
     position: relative;
 }
 .breadcumb2::before{

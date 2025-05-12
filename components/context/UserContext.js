@@ -10,6 +10,9 @@ export const UserProvider = ({ children }) => {
   const [sec4, setSec4] = useState('')
   const [sec5, setSec5] = useState('')
   const [display, setDisplay] = useState('none')
+  const [tabInfo, setTabInfo] = useState('')
+  const [tabKey, setTabKey] = useState('1')
+  const [topSecRef,setTopSecRef]= useState('')
   return (
     <UserContext.Provider 
     value={{ 
@@ -20,7 +23,10 @@ export const UserProvider = ({ children }) => {
       sec3,setSec3,
       sec4,setSec4,
       sec5, setSec5,
-      display, setDisplay
+      display, setDisplay,
+      tabInfo, setTabInfo,
+      tabKey, setTabKey,
+      topSecRef,setTopSecRef
       }}>
       {children}
     </UserContext.Provider>

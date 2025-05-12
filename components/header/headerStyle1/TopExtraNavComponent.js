@@ -4,18 +4,24 @@ import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
 import styles from './topextra.module.css';
 import { Container } from 'react-bootstrap';
+import { useUserContext } from '@/components/context/UserContext';
 
 const TopExtraNavComponent = ({ isFixed }) => {
+    const topSecRef=React.useRef('')
+    
+    const{tabKey, setTabKey,setTopSecRef}=useUserContext()
+    setTopSecRef(topSecRef)
     const router = useRouter()
     function handleClick(id) {
         router.push({
             pathname:'aboutUs',
             query:{tabKey:id}
         })
+        setTabKey(id)
     }
     
     return (
-        <section className={styles.topExtra}>
+        <section ref={topSecRef} className={styles.topExtra}>
             <Container>
         <div className='main_top_nav bg-red-c'>
             <div className={styles.for_full_flex}>
@@ -52,9 +58,9 @@ const TopExtraNavComponent = ({ isFixed }) => {
                             {/* <a onClick={()=>router.push(`/`)}><i class="fa-solid fa-house"></i></a> */}
                                     <a onClick={()=>handleClick('1')}><h6>About us</h6></a>
                                     <a onClick={()=>handleClick('2')}><h6>Careers</h6></a>
-                                    <a onClick={()=>handleClick('3')}><h6>News & Media</h6></a>
-                                    <a onClick={()=>handleClick('4')}><h6>FAQ</h6></a>
-                                    <a onClick={()=>handleClick('5')}><h6>Contact Us</h6></a>
+                                    <a onClick={()=>handleClick('3')}><h6>How We Work</h6></a>
+                                    <a onClick={()=>handleClick('6')}><h6>FAQ</h6></a>
+                                    <a onClick={()=>handleClick('7')}><h6>Contact Us</h6></a>
                                    
                                     
                                 </div>
