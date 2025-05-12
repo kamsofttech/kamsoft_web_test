@@ -23,13 +23,14 @@ const App = ({ Component, pageProps }) => {
         <FlashScreen>
           <Head>
             {/*<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />*/}
-            <title>Seven Wonders Trading</title>
+            <title>ERP/API Solution and Service Provider,Goa,Pune and Delhi</title>
             <meta charset="UTF-8" />
-            <meta name="keywords" content="jam;cadbury chocolate; flavor chocolate; drinking chocolate; chocolates; nestle chocolates" />
-            <meta name="author" content="Seven Wonders Trading, Goa" />
+            <meta name="description" content="ERP/API Solution and Service Provider,Goa,Pune and Delhi"></meta>
+            <meta name="keywords" content="ERP implemention and support,Oracle JDEdward,software developement,RFID,RFID solutions,data process automation,website developement,real time tracking monitoring system,IOT,IOT solution,customized/application program interface developer,Data analytical/analyst,school Management,SMS,spot billing system " />
+            <meta name="author" content="Kamsoft technologies, Goa" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-            <meta name="title" content="Seven Wonders Trading" />
+            <meta name="title" content="Kamsoft technologies" />
             <meta name="language" content="English" />
 
           </Head>
