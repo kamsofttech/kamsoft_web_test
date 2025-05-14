@@ -17,13 +17,13 @@ const AboutNewMainComponent = () => {
         <div className='pro_box'>
           <Row>
             <Col lg='3' md='6' className={styles.iconBox1}>
-              <IconBox1Component title={"1500+"} desc={"Successfully completed projects"} />
+              <IconBox1Component title={"175+"} desc={"Successfully completed projects"} />
             </Col>
             <Col lg='5' md='6'className={styles.iconBox2}>
               <IconBox2Component video={"https://www.youtube.com/embed/9No-FiEInLA"} />
             </Col>
             <Col lg='4' md='6' className={styles.iconBox3}>
-              <IconBox3Component num={"36"} qEmp={"Qualified Employees"} enpDesc={"Work with our leaders and the hard-working personalities who deliver innovative concepts to corporations like yours."} />
+              <IconBox3Component num={"12"} qEmp={"Qualified Employees"} enpDesc={"Work with our leaders and the hard-working personalities who deliver innovative concepts to corporations like yours."} />
             </Col>
           </Row>
           <Row>

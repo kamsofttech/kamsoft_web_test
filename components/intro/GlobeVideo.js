@@ -42,7 +42,7 @@ useEffect(() => {
                 style={{ width: "100%", height: "auto" ,filter: `grayscale(1)`}}
             />
             <div className={styles.globeBox}>
-        <span>256+</span>
+        <span>100+</span>
         <h5>Clients around the globe</h5>
         <div></div>
     </div>

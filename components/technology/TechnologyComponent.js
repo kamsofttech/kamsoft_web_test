@@ -30,7 +30,7 @@ const TechnologyComponent = () => {
             <TechBoxComponent  item={['React Native','Flutter','Kotlin']} title={'Android'} img={'images/icon/android.svg'}/>
             </Col>
             <Col md={2}>
-            <TechBoxComponent imgWidth={'50%'} item={['JDE','Flutter','Odoo']} title={'ERP'} img={'images/icon/odoo.svg'}/>
+            <TechBoxComponent imgWidth={'50%'} item={['JDE','SAP','Odoo']} title={'ERP'} img={'images/icon/odoo.svg'}/>
             </Col>
         </Row>
         

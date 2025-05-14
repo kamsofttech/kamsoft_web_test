@@ -8,19 +8,38 @@ const SeoTabComponent = () => {
   return (
     <div className={styles.full_box_2}>
             <Row>
-              <Col md="6">
+              <Col md="5">
                 <ImageComponent image={'/images/feature-info/02.jpg'} />
                 </Col>
-              <Col md="6">
+              <Col md="7">
                 <div className={styles.box_2}>
-                  <TitleNewComponent sub_title={"Speed up you website"} main_title={"Search Engine Optimization"} desc={"So you have a website but no one visiting it? Use a past defeat as a motivator. Remind yourself you have nowhere to go except up as you have already been at the bottom. This process is implemented in several ways. Here are a few examples: "} />
-                  <ChecklistComponent items={["  We make sure that the right keyword is in the page title. ",
-                    "  We make sure that the right keyword is in the meta description. ",
-                    "  We make sure that the right keyword is in the HTML heading tag. ",
-                    "  The keyword must be relevant to your industry. ",
-                    "  It cannot be “Copied” from another website. "
+                  <TitleNewComponent sub_title={"Speed up you website"} main_title={"Digital Marketing & SEO Services"} desc={"Boost your online visibility and drive targeted traffic with our comprehensive digital marketing and SEO services, tailored to grow your brand and increase conversions. "} />
+                  
+                  <Row>
+                    <Col md={6}>
+                    <ChecklistComponent items={["  Website SEO Audit & Optimization. ",
+                    " Keyword Research & Strategy",
+                    " On-Page & Off-Page SEO",
+                    " Content Marketing",
+                    " Search Engine Marketing (SEM) / Pay-Per-Click (PPC)",
+                    " Social Media Marketing & Management",
+                    
                   ]} />
-                </div></Col>
+                    </Col>
+                    <Col md={6}>
+                    <ChecklistComponent items={[
+                    " Email Marketing Campaigns",
+                    " Analytics & Performance Reporting",
+                    " Local SEO & Google Business Optimization",
+                    " Link Building Strategies",
+                    " Competitor Analysis",
+                    " Mobile & Voice Search Optimization",
+                  ]} />
+                    </Col>
+                  </Row>
+                  
+                </div>
+                </Col>
             </Row>
           </div>
   )

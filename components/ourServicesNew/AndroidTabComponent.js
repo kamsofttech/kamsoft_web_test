@@ -11,15 +11,18 @@ const AndroidTabComponent = () => {
                 <Col md="4"><ImageComponent image={'/images/services/wenBg.jpg'} /></Col>
                 <Col md="5">
                     <div className={styles.box_3}>
-                        <TitleNewComponent sub_title={"Launch faster. Scale smarter"} main_title={"With Android App Development"} desc={"The following outlines our web-development process, which can be split into several sensible elements:"} />
+                        <TitleNewComponent sub_title={"Launch faster. Scale smarter"} main_title={"RFID Workflow Automation Solution"} 
+                        desc={"Streamline operations with our RFID-based workflow automation solution, enabling real-time tracking, improved accuracy, and efficient process management across your business."} />
                         <NumberChecklist
-                            numbers={["01", "02", "03", "04", "05", "06"]}
-                            points={["Technical analysis",
-                                "Planning and Idea",
-                                "Design and Copywriting",
-                                "Front- & Back-End Coding",
-                                "Quality Assurance",
-                                "Testing and Launch"
+                            numbers={["01", "02", "03", "04", "05"]}
+                            points={[
+                                "RFID system design and architecture",
+                                "Hardware selection and integration (RFID tags, readers, antennas)",
+                                "Real-time asset and inventory tracking",
+                                "Workflow mapping and automation",
+                                "Integration with ERP/WMS/CRM systems",
+                                
+
                             ]} />
                         <h6>Package start from<b>$600</b></h6>
                     </div>
@@ -27,6 +30,16 @@ const AndroidTabComponent = () => {
 
 
                 <Col md="3">
+                <NumberChecklist
+                            numbers={[ "06","07", "08", "09", "10"]}
+                            points={[
+                                "RFID software development and customization",
+                                "Data capture and analytics dashboards",
+                                "Access control and security solutions",
+                                "RFID system testing and deployment",
+                                "Staff training and technical support",
+
+                            ]} />
                     <div className={styles.badge}>
                         <div className={styles.badgeRound}>
                             <h4><span>30+</span>Million</h4>
