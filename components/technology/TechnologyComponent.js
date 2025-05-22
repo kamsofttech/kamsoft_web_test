@@ -24,7 +24,7 @@ const TechnologyComponent = () => {
             <TechBoxComponent item={['Wordpress','Laravel','Symphony']} title={'Php'} img={'images/icon/php.svg'}/>
             </Col>
             <Col md={2}>
-            <TechBoxComponent imgWidth={'50%'} item={['MySql','Postgres','MongoDb']} title={'MySql'} img={'images/icon/sql.svg'}/>
+            <TechBoxComponent imgWidth={'50%'} item={['MySql','Postgres','MongoDb','SQL Server','Oracle','DB2']} title={'MySql'} img={'images/icon/sql.svg'}/>
             </Col>
             <Col md={2}>
             <TechBoxComponent  item={['React Native','Flutter','Kotlin']} title={'Android'} img={'images/icon/android.svg'}/>

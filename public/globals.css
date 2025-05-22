@@ -56,6 +56,9 @@ img {
 body, html {
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
  background-color: #fff;
  font-family: "Archivo", sans-serif;
