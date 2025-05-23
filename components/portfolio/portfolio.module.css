@@ -169,6 +169,7 @@ color: #fff;
 .cont_ul ul>li>h6{
     font-size: 13px;
     margin-bottom: 4px;
+    line-height: 1.8;
 }
 .cont_ul ul>li>h6>span{
     font-weight: 400;

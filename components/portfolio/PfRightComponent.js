@@ -17,10 +17,25 @@ const PfRightComponent = () => {
              <h5 style={{color:'#fff'}}><i class="fas fa-wrench"></i> Our Website Development Expertise Includes:</h5>
              <div className={styles.cont_ul}>
               <ul>
-                <li><h6>Corporate & Business Websites</h6><p>Clean, professional designs that establish brand credibility and generate leads.</p></li>
-                <li><h6>E-Commerce Platforms</h6><p>Scalable online stores with smooth user experience, secure checkout, and inventory integration.</p></li>
-                <li><h6>Government & Public Sector Portals</h6><p>Accessible, secure, and informative platforms built for transparency and citizen engagement.</p></li>
+                <li><h6>Corporate & Business Websites</h6>
+                {/* <p>Clean, professional designs that establish brand credibility and generate leads.</p> */}
+                </li>
+                <li><h6>E-Commerce Platforms</h6>
+                {/* <p>Scalable online stores with smooth user experience, secure checkout, and inventory integration.</p> */}
+                </li>
+                <li><h6>Government & Public Sector Portals</h6>
+                {/* <p>Accessible, secure, and informative platforms built for transparency and citizen engagement.</p> */}
+                </li>
                 
+                <li><h6>Educational & Institutional Websites</h6>
+                {/* <p>Structured content layouts, multi-user systems, and integrations for learning management.</p> */}
+                </li>
+                <li><h6>Real Estate, Travel, and Hospitality Sites</h6>
+                {/* <p>Visually driven websites with advanced booking, listing, and map-based features.</p> */}
+                </li>
+                <li><h6>Custom CMS & Admin Panels</h6>
+                {/* <p>Built with WordPress, Payload CMS, or headless frameworks for easy content management.</p> */}
+                </li>
                 
               </ul>
              </div>
@@ -30,15 +45,7 @@ const PfRightComponent = () => {
         <Col md={6}>
         <div className={styles.lbox_top_cont}>
           {/* <img src="/images/portfolio/04.jpg"/> */}
-          <div className={styles.cont_ul}>
-              <ul>
-                
-                <li><h6>Educational & Institutional Websites</h6><p>Structured content layouts, multi-user systems, and integrations for learning management.</p></li>
-                <li><h6>Real Estate, Travel, and Hospitality Sites</h6><p>Visually driven websites with advanced booking, listing, and map-based features.</p></li>
-                <li><h6>Custom CMS & Admin Panels</h6><p>Built with WordPress, Payload CMS, or headless frameworks for easy content management.</p></li>
-                
-              </ul>
-             </div>
+          
             <h5 style={{color:'#fff'}}><i class="fas fa-rocket"></i>  Why Our Portfolio Stands Out</h5>
              <div className={styles.cont_ul}>
               <ul>
