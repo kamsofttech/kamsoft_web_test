@@ -65,6 +65,12 @@
     position: relative;
     text-transform: uppercase;
 }
+.pf_title>p{
+    position: relative;
+    z-index: 1;
+    color: #cbcbcb;
+    margin-bottom: 0;
+}
 .pf_right_box{
     position: relative;
     z-index: 1;
@@ -79,8 +85,8 @@
 .pf_img{
      background-position: center top;
   background-size: cover;
-  filter: grayscale(100%);
-  transition: background-position 12s ease, filter 12s ease;
+  /* filter: grayscale(100%); */
+  transition: background-position 12s ease;
   width: 100%;
   height: 100%;
 }
@@ -96,16 +102,17 @@
   background: #ffffff;
   transition: all 0.3s ease-in-out;
   transform: translate(-50%, 0%);
+  box-shadow: -1px 0 4px 2px rgba(0, 0, 0, .05);
 }
- .pf_item:hover .pf_info {
-    opacity: 0;
-    /* bottom: 20px; */
+ /* .pf_item:hover .pf_info {
+    opacity: 1;
+    
     bottom: -90px;
-} 
+} */
 .pf_item:hover .pf_img{
      background-position: center bottom;
-  filter: grayscale(0%);
-}
+  /* filter: grayscale(0%); */
+} 
 
 .icon_btn {
     display: -webkit-box;
@@ -144,6 +151,9 @@
     color: #022d62;
     margin-bottom: 10px;
 }
+/* .pf_info>p{
+    margin-bottom: 0;
+} */
 .lbox_top_cont>h4{
     font-size: 24px;
     font-weight: 600;
@@ -182,3 +192,36 @@ color: #fff;
 .cont_ul ul>li::marker{
     color: #1dbb26;;
 }
+.tabTitle{
+    border: none;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    background: #f6f6f6;
+    border-radius: 50px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    padding: 4px 8px;
+    
+}
+.tabTitle:hover{
+    color: #ffffff;
+    background: #3a3a3a;
+}
+.serTab :global(.ant-tabs-tab.ant-tabs-tab-active) .tabTitle {  
+    color: #fff;  
+    background-color: #1dbb26;  
+}
+.serTab :global(.ant-tabs-tab) {  
+    margin: 0 0 0 8px !important;
+}
+.serTab :global(.ant-tabs-nav-more .anticon){
+color: #1dbb26;
+font-size: 20px;
+}
+.serTab :global(.ant-tabs-nav::before){
+    content: none;
+
+}
+.serTab :global(.ant-tabs .ant-tabs-tab.ant-tabs-tab-focus .ant-tabs-tab-btn) {  
+     outline: 0px solid #91caff00;
+} 

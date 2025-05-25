@@ -4,7 +4,7 @@ import { Col, Row , Container} from 'react-bootstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Navigation,Autoplay } from 'swiper/modules';
 import TestimonialNewItem from '../testimonialNew/TestimonialNewItem';
 
 const TestimonialNewComponent = ({secId}) => {
@@ -19,31 +19,24 @@ const TestimonialNewComponent = ({secId}) => {
       <div className={styles.pro_box}>
             <Swiper spaceBetween={30}  
         onSlideChange={(index) => slideChange(index)}
-        navigation={true} modules={[Navigation]} className={styles.mySwiper}>
+        navigation={true} autoplay={true} modules={[Navigation,Autoplay]} className={styles.mySwiper}>
                  <SwiperSlide className={sKey==0?`${styles.slideActive}`:''} >
-                    <TestimonialNewItem prof_img={'/images/avatar/01.jpg'} test_content={"We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same."}
-                    author_name={"Alice Williams"} author_post={"Vetrov Systems Development"}/>
+                    <TestimonialNewItem prof_img={'/images/avatar/01.jpg'} test_content={"So thrilled with my new website! The team brought my vision to life with elegance, functionality, and style. As a beauty therapist with 21+ years of experience, this platform now reflects the professionalism and passion behind Maty’s Brow. Highly recommended!"}
+                    author_name={"Matilda Fernandes"} author_post={"Founder of Maty’s Brow"} linkUrl={"https://matysbrow.com/"}/>
                  </SwiperSlide>
                  <SwiperSlide className={sKey==0?`${styles.slideActive}`:''} >
-                    <TestimonialNewItem prof_img={'/images/avatar/02.jpg'} test_content={"The Hi-soft database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead."}
-                    author_name={"Michael Bean"} author_post={"Web Developer"}/>
+                    <TestimonialNewItem prof_img={'/images/avatar/02.jpg'} test_content={"Kamsoft Technologies understood the technical and visual requirements of the pharma packaging industry for crafting a top-tier website for Vimal Art Printery! Their design captured the precision and quality we stand for in pharma packaging. Highly professional, responsive, and creative!"}
+                    author_name={"Mr. Sandesh R. Dhareshwar"} author_post={"CEO, Vimal Art Printery"} linkUrl={"https://vimalartprintery.com/"}/>
                  </SwiperSlide>
                  <SwiperSlide className={sKey==0?`${styles.slideActive}`:''} >
-                    <TestimonialNewItem prof_img={'/images/avatar/01.jpg'} test_content={"We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same."}
-                    author_name={"Alice Williams"} author_post={"Vetrov Systems Development"}/>
+                    <TestimonialNewItem prof_img={'/images/avatar/03.jpg'} test_content={"We are extremely pleased with the outstanding website developed by Kamsoft Technologies created for Apurva Engineering Works! They turned our complex marine and industrial services into a sleek, professional digital platform. Big thanks to the team for their top-notch design and support!"}
+                    author_name={"Mr. Samir U. S. Juwarkar"} author_post={"Co-founder cum CEO, Apurva Engineering Works"} linkUrl={"https://apurvaengineering.com/"}/>
                  </SwiperSlide>
                  <SwiperSlide className={sKey==0?`${styles.slideActive}`:''} >
-                    <TestimonialNewItem prof_img={'/images/avatar/02.jpg'} test_content={"The Hi-soft database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead."}
-                    author_name={"Michael Bean"} author_post={"Web Developer"}/>
+                    <TestimonialNewItem prof_img={'/images/avatar/04.jpg'} test_content={"Kamsoft’s team was highly professional, communicative, and deeply understood the industrial domain, which made the entire development process smooth and efficient. Thanks to their expertise, we’ve seen a noticeable increase in online inquiries and customer engagement."}
+                    author_name={"Virendra Surve"} author_post={"CEO, Sharada industries"} linkUrl={"https://sharadaindustry.com/"}/>
                  </SwiperSlide>
-                 <SwiperSlide className={sKey==0?`${styles.slideActive}`:''} >
-                    <TestimonialNewItem prof_img={'/images/avatar/01.jpg'} test_content={"We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same."}
-                    author_name={"Alice Williams"} author_post={"Vetrov Systems Development"}/>
-                 </SwiperSlide>
-                 <SwiperSlide className={sKey==0?`${styles.slideActive}`:''} >
-                    <TestimonialNewItem prof_img={'/images/avatar/02.jpg'} test_content={"The Hi-soft database has been one of our current sources for recruitment, backed by a very experienced team who would go out of their way to make sure that requests are taken ahead."}
-                    author_name={"Michael Bean"} author_post={"Web Developer"}/>
-                 </SwiperSlide>
+               
                  </Swiper>
       </div>
     </Container>

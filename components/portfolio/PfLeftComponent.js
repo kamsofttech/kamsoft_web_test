@@ -5,14 +5,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
-const PfLeftComponent = () => {
-      const swiperRef = useRef(null);
+const PfLeftComponent = ({swiperRef,handleSlideChange}) => {
+      //const swiperRef = useRef(null);
       const handleTap = () => {
-    const swiper = swiperRef.current.swiper;
-    if (swiper.autoplay.running) {
-      swiper.autoplay.stop();
+    const swiper4 = swiperRef.current.swiper;
+    if (swiper4?.autoplay?.running) {
+      swiper4?.autoplay.stop();
     } else {
-      swiper.autoplay.start();
+      swiper4?.autoplay.start();
     }
   };
 
@@ -20,6 +20,7 @@ const PfLeftComponent = () => {
         <div className={styles.pf_left_box}>
             <div className={styles.pf_title}>
                 <h3>Our Portfolio</h3>
+                <p>Web Portal Application Development</p>
             </div>
             <div onMouseOver={handleTap}  onTouchStart={handleTap} className={styles.pf_swiper}>
                 <Swiper
@@ -27,13 +28,16 @@ const PfLeftComponent = () => {
                     slidesPerView={1}
                     spaceBetween={30}
                     freeMode={true}
-
-                    loop={true}
-                    autoplay={{
-                        delay: 2500,
-                        pauseOnMouseEnter:true,
-                        disableOnInteraction: true,
-                    }}
+                    onSlideChange={(index) => handleSlideChange(index)}
+                    onSwiper={(swiper) => {
+                            swiperRef.current = swiper;
+                        }} 
+                    //loop={true}
+                    // autoplay={{
+                    //     delay: 2500,
+                    //     pauseOnMouseEnter:true,
+                    //     disableOnInteraction: true,
+                    // }}
 
 
                     modules={[Autoplay, Pagination, Navigation, FreeMode]}
@@ -44,10 +48,11 @@ const PfLeftComponent = () => {
                                 {/* <img src="/images/portfolio/03.jpg"/> */}
                             </div>
                             <div className={styles.pf_info}>
-                                <a className={styles.pf_info_title} href="#">🏛️ Village Panchayat Website Development </a>
-                                <a className={styles.pf_info_subTitle} href="#">Government of Goa</a>
-                                <p className="mt-2">We successfully designed and developed a comprehensive suite of websites for all Village Panchayats across the state of Goa, as part of a digital governance initiative led by the Government of Goa.</p>
-                                {/* <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a> */}
+                                <a className={styles.pf_info_title} href="#">🏛️ Goverment Sector  </a>
+                                <a className={styles.pf_info_subTitle} href="#">Power Energy/Village Panchayat</a>
+                                <p className="mt-2">E-Governance platforms likes Taxes and Fees, digital house hold records, Village Infra structure and resources.
+Smart Governance: Blockchain for transparency, AI in policy-making.</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                        
@@ -58,10 +63,11 @@ const PfLeftComponent = () => {
                                 {/* <img src="/images/portfolio/03.jpg"/> */}
                             </div>
                             <div className={styles.pf_info}>
-                                <a className={styles.pf_info_title} href="#">🏡 Farmhouse Website Development</a>
-                                <a className={styles.pf_info_subTitle} href="#">Modern Web Solutions for Premium Rural Getaways</a>
-                                <p className="mt-2">We have successfully designed and developed a portfolio of custom farmhouse websites, catering to the growing demand for rural retreats, agritourism, and private holiday rentals.</p>
-                                {/* <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a> */}
+                                <a className={styles.pf_info_title} href="#">🌍🌾 Tour & Travel + Farm Stay</a>
+                                <a className={styles.pf_info_subTitle} href="#">Streamlining Logistics, Agri-Tech, and Tourism
+</a>
+                                <p className="mt-2">We specialize in smart digital solutions for logistics optimization, agri-tech innovations, and seamless travel & stay management.</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                        
@@ -72,10 +78,10 @@ const PfLeftComponent = () => {
                                 {/* <img src="/images/portfolio/03.jpg"/> */}
                             </div>
                             <div className={styles.pf_info}>
-                                <a className={styles.pf_info_title} href="#">⚓ Shipbuilding Website Development</a>
-                                <a className={styles.pf_info_subTitle} href="#">Digital Presence for Maritime Engineering Excellence</a>
-                                <p className="mt-2">We have successfully developed a series of shipbuilding company websites, tailored to showcase the engineering, craftsmanship, and innovation behind maritime infrastructure and vessel construction.</p>
-                                {/* <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a> */}
+                                <a className={styles.pf_info_title} href="#">⚓ Logistics</a>
+                                <a className={styles.pf_info_subTitle} href="#">Seamless Solutions for Modern Logistics</a>
+                                <p className="mt-2"> we empower businesses across logistics, warehousing, and supply chain industries with advanced digital solutions designed to streamline every stage of material handling</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                        
@@ -86,10 +92,10 @@ const PfLeftComponent = () => {
                                 {/* <img src="/images/portfolio/03.jpg"/> */}
                             </div>
                             <div className={styles.pf_info}>
-                                <a className={styles.pf_info_title} href="#">🎨🖨️  Art Printery Website Development</a>
-                                <a className={styles.pf_info_subTitle} href="#">Elevating Creative Print Businesses Through Digital Excellence</a>
-                                <p className="mt-2">We successfully designed and developed a series of custom websites for art printeries, helping these creative businesses showcase their artistic printing capabilities and reach a broader audience through a compelling digital presence.</p>
-                                {/* <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a> */}
+                                <a className={styles.pf_info_title} href="#">🎨🖨️ Printing & Packaging</a>
+                                <a className={styles.pf_info_subTitle} href="#">Smart Web Solutions for Print & Pack Leaders</a>
+                                <p className="mt-2">Elevate your printing and packaging brand with a modern, SEO-ready, mobile-optimized website tailored for your industr</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                        
@@ -100,24 +106,52 @@ const PfLeftComponent = () => {
                                 {/* <img src="/images/portfolio/03.jpg"/> */}
                             </div>
                             <div className={styles.pf_info}>
-                                <a className={styles.pf_info_title} href="#">⚙️ Engineering Product Website Development</a>
-                                <a className={styles.pf_info_subTitle} href="#"> Showcasing Industrial Innovation Digitally</a>
-                                <p className="mt-2">We successfully developed a full suite of websites for companies in the engineering products sector, helping manufacturers and industrial suppliers present their technical products and capabilities through powerful, high-performance digital platforms.</p>
-                                {/* <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a> */}
+                                <a className={styles.pf_info_title} href="#">⚙️⛏️ Manufacturing/Mining</a>
+                                <a className={styles.pf_info_subTitle} href="#">Digital Solutions Built for Modern Manufacturing</a>
+                                <p className="mt-2">Custom-built digital tools to automate, monitor, and manage every stage of your manufacturing workflow.</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                        
                     </SwiperSlide>
                     <SwiperSlide >
                         <div className={styles.pf_item}>
-                            <div className={styles.pf_img} style={{ backgroundImage: `url(/images/portfolio/p6.jpg)` }}>
+                            <div className={styles.pf_img} style={{ backgroundImage: `url(/images/portfolio/p7.jpg)` }}>
                                 {/* <img src="/images/portfolio/03.jpg"/> */}
                             </div>
                             <div className={styles.pf_info}>
-                                <a className={styles.pf_info_title} href="#">🚤 Boat Building Website Development</a>
-                                <a className={styles.pf_info_subTitle} href="#"> Digital Platforms for Marine Craftsmanship and Innovation</a>
-                                <p className="mt-2">We have successfully designed and developed a full range of websites for boat building companies, highlighting their expertise in marine engineering, custom vessel fabrication, and innovative design.</p>
-                                {/* <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a> */}
+                                <a className={styles.pf_info_title} href="#">🛒💰 Retail/Finance</a>
+                                <a className={styles.pf_info_subTitle} href="#">Empowering with Engaging & Scalable Websites</a>
+                                <p className="mt-2">From e-commerce/Finance platforms to brand showcase sites, we create fast, mobile-friendly, and secure retail websites designed to boost sales, enhance customer experience, and scale with your business growth.</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                       
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className={styles.pf_item}>
+                            <div className={styles.pf_img} style={{ backgroundImage: `url(/images/portfolio/p8.jpg)` }}>
+                                {/* <img src="/images/portfolio/03.jpg"/> */}
+                            </div>
+                            <div className={styles.pf_info}>
+                                <a className={styles.pf_info_title} href="#">🎓 Institution/Education</a>
+                                <a className={styles.pf_info_subTitle} href="#">Transforming Learning with Modern Web Platforms</a>
+                                <p className="mt-2">We build dynamic, user-friendly websites that enhance student engagement, simplify administration, and showcase your institution’s unique strengths — all optimized for seamless access and growth.</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                       
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className={styles.pf_item}>
+                            <div className={styles.pf_img} style={{ backgroundImage: `url(/images/portfolio/p9.jpg)` }}>
+                                {/* <img src="/images/portfolio/03.jpg"/> */}
+                            </div>
+                            <div className={styles.pf_info}>
+                                <a className={styles.pf_info_title} href="#">🏥⚡ HealthCare/Utilities</a>
+                                <a className={styles.pf_info_subTitle} href="#"> Innovative Web Solutions for Healthcare & Utilities</a>
+                                <p className="mt-2">Secure, scalable websites that simplify patient care and optimize energy management—driving efficiency and engagement across industries.</p>
+                                <a href="#" className={styles.icon_btn}><i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                        
