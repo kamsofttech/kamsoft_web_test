@@ -13,14 +13,22 @@ const History = () => {
             <Container className={styles.history_container}>
                 <Row className={styles.row1}>
                     <Col md="9">
-                    <SectionTitle heading_title={"Established 2010 in Hi-soft has been offering world-class information technology."}
-                    items={["Positive pleasure-oriented goals are much more powerful motivators than negative fear-based ones. Although each is successful separately, the right combination of both is the most powerful motivational force known to humankind."]}/>
+                    <SectionTitle heading_title={"Established in 2002, Kamsoft Technologies delivers world-class IT solutions."}
+                    items={[
+                        "At Kamsoft Technologies, we specialize in crafting intelligent automation solutions and distinctive web designs and application development tailored to the unique needs of diverse industries. We believe your website or portal should do more than just look good—it should communicate your brand, showcase your products, and drive engagement.",
+                        "Our designs are intuitive, responsive, and strategically aligned to spark interest and guide users toward action. Alongside web development, we also offer comprehensive digital services to amplify your online reach and business impact.Let your digital presence speak volumes—with Kamsoft."
+                        ]}/>
                     </Col>
                 </Row>
                 <Row className={styles.row2}>
                     <Col md="10">
                         <div className={styles.timeline}>
-                            <Slider className={styles.his_slider} min={2010} max={2020} marks={{ 2010: "2010", 2012: "2012", 2014: "2014", 2016: "2016", 2018: "2018", 2020: "2020"}} step={2} defaultValue={selectedYear} onChange={(value) => setSelectedYear(value)} />
+                            <div style={{textAlign:'center'}}>
+                                <h2>2002 - 2019: Foundation Under Sister Company</h2>
+                                <p>Operated under the flagship of a sister company, delivering specialized software solutions.</p>
+                            </div>
+                           
+                            <Slider className={styles.his_slider} min={2002} max={2022} marks={{ 2002: "2002", 2014: "2014", 2019: "2019", 2022: "2022"}} step={2} defaultValue={selectedYear} onChange={(value) => setSelectedYear(value)} />
                             <div className={styles.event_content}>
                                 <HistoryEvents year={selectedYear} />
                             </div>
