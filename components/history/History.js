@@ -6,7 +6,7 @@ import HistoryEvents from '../elements/historyEvents/HistoryEvents';
 import SectionTitle from '../elements/sectionTitle/SectionTitle';
 
 const History = () => {
-    const [selectedYear, setSelectedYear] = useState("2010");
+    const [selectedYear, setSelectedYear] = useState("2002");
 
     return (
         <section className={styles.history_section}>
@@ -28,7 +28,7 @@ const History = () => {
                                 <p>Operated under the flagship of a sister company, delivering specialized software solutions.</p>
                             </div>
                            
-                            <Slider className={styles.his_slider} min={2002} max={2022} marks={{ 2002: "2002", 2014: "2014", 2019: "2019", 2022: "2022"}} step={2} defaultValue={selectedYear} onChange={(value) => setSelectedYear(value)} />
+                            <Slider className={styles.his_slider} min={1999} max={2024} marks={{ 2002: "2002", 2014: "2014", 2019: "2019", 2022: "2022",2024: "2024"}} step={2}  defaultValue={selectedYear} onChange={(value) => setSelectedYear(value)} />
                             <div className={styles.event_content}>
                                 <HistoryEvents year={selectedYear} />
                             </div>

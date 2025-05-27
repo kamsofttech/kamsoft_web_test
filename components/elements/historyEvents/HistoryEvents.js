@@ -70,6 +70,30 @@ const HistoryEvents = ({year}) => {
             italText:"",
             secondDesc:""
         },
+        2024: {
+            title: "2024",
+            miles:{
+            caption:"",
+            keys:[
+              {
+                keyName:"175+ Projects Delivered",
+                keyItems:[],
+              },
+              {
+                keyName:"100+ Clients Served",
+                keyItems:[],
+              },
+              {
+                keyName:"Expanding into AI, IoT, and Smart Governance",
+                keyItems:[],
+              },
+              
+            ],
+            },
+            desc: "Achievement (2024+)",
+            italText:"",
+            secondDesc:"From billing systems to blockchain-ready governance – two decades of trusted innovation"
+        },
         
       };
   return (

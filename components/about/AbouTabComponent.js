@@ -59,13 +59,13 @@ const AbouTabComponent = () => {
           children:<ProcessBox/>,
         },
         
-        {
-          key: '4',
-          label: <div className={styles.tabTitle}><a>Our team</a></div>,
-          title:'Meet Our Team',
-          desc:'Let success motivate you. Find a picture of what epitomizes success to you and then pull it out when you are in need of motivation.',
-          children:<TeamComponent/>,
-        },
+        // {
+        //   key: '4',
+        //   label: <div className={styles.tabTitle}><a>Our team</a></div>,
+        //   title:'Meet Our Team',
+        //   desc:'Let success motivate you. Find a picture of what epitomizes success to you and then pull it out when you are in need of motivation.',
+        //   children:<TeamComponent/>,
+        // },
         {
             key: '5',
             label: <div className={styles.tabTitle}><a>Our values</a></div>,
