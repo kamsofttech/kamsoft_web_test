@@ -11,11 +11,12 @@ import AndroidTabComponent from './AndroidTabComponent'
 import { useUserContext } from '../context/UserContext'
 import ITConsultiongTabComponent from './ITConsultiongTabComponent';
 const OurServicesNewComponent = () => {
-  const{sec3,setSec3}=useUserContext()
+  const{sec3,setSec3,serTabKey, setSerTabKey}=useUserContext()
       const  sec3Ref=React.useRef('')
       setSec3(sec3Ref)
   const onChange = key => {
     console.log(key);
+    setSerTabKey(key)
   };
   const items = [
     {
@@ -52,7 +53,7 @@ const OurServicesNewComponent = () => {
           <HeadingDefault main_title={'Smart Solutions for the Digital Age – From Development to Optimization.'} sub_title={'Discover our full suite of digital solutions; We take pride in serving our clients deliver marvelous results when it comes to their projects. From data to performance, we’ve got you covered-all tailored to drive growth and innovation.'} />
 
           <div className='box_1'>
-          <Tabs indicator={{size:0}} className={styles.serTab} centered defaultActiveKey="1" items={items} onChange={onChange} />
+          <Tabs indicator={{size:0}} className={styles.serTab} centered defaultActiveKey={serTabKey} activeKey={serTabKey} items={items} onChange={onChange} />
             
           </div>
           

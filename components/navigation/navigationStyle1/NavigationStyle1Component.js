@@ -1,19 +1,13 @@
 import React from 'react'
 import styles from './navigationStyle.module.css';
 import { useRouter } from 'next/router';
-import { Nav, NavDropdown } from 'react-bootstrap';
-import { getMenuItems } from '@/lib/api';
-import { createStructuredSelector } from 'reselect';
-import { selectMenuItem } from '@/redux/menu/menuSelector';
-import { connect } from 'react-redux';
-import { setProductItem, setProductTabKey, setSubCatData } from '@/redux/menu/menuActions';
-import { data } from 'autoprefixer';
+
 import { useUserContext } from '@/components/context/UserContext';
-const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,setProductItem,setSubCatData}) => {
+const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems}) => {
     const router=useRouter()
-    const {sec1,sec2,sec3,sec4 } = useUserContext()
+    const {sec1,sec2,sec3,sec4,setTabKey } = useUserContext()
     console.log('user',router)
-    const [menuId,setMenuId]=React.useState('0')
+    const [menuId,setMenuId]=React.useState('1')
     const [subMenuId,setSubMenuId]=React.useState('')
     const [arrowType,setArrowType]=React.useState('arrow_left')
     const [arrowIcon,setArrowIcon]=React.useState('fa-angle-right')
@@ -22,6 +16,7 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
    // const{headers}=menuItems.data
     const [menuItem,setMenuItem]=React.useState('')
     const onMenuClick=(id,routeName,secId)=>{
+        setTabKey('')
         if (btnClick) {
             setSubMenuId('') 
             setSubMenuCLick(!subMenuCLick) 
@@ -30,23 +25,21 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
         }
         if(router.pathname=='/'){
             //routeName.current.scrollIntoView({ behavior: 'smooth' });
+            setMenuId(id) 
             window.scrollTo(0,routeName.current.offsetTop-80)
         }else{
+            setMenuId(id) 
             router.push(`/#${secId}`)
             //window.scrollTo(0,routeName.current.offsetTop-80)
         }
         
         //router.push(`/${routeName=='home'?'/':routeName}`)
     }
-    const onSubMenuClick=(id)=>{
-        if (btnClick) {
-            
-            setSubMenuId(id) 
-            setSubMenuCLick(!subMenuCLick)
-        }
-    }
     
     React.useEffect(()=>{
+     if (router.pathname=='/aboutUs') {
+        setMenuId('')
+     }   
     //console.log(menuItems)
     if (menuItems!==undefined){
         const{header}=menuItems.data
@@ -92,17 +85,9 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
           handleResize()
           window.addEventListener('resize', handleResize)
 
-    },[menuItems])
+    },[menuItems,router])
     
-    const goToPage=(route,title,code)=>{
-        //setTabKey('')
-        //setSubCatData('')
-        setProductItem('')
-        
-        const newPath = title.includes(" / ") ? title.replace(/\//g, '') : title;
-        //console.log('newPath',newPath)
-        router.push(`/${route}/${newPath}?catCode=${code}`)
-    }
+    console.log('menuId',menuId)
     return (
         <>
 
@@ -216,12 +201,5 @@ const NavigationStyle1Component = ({btnClick,setBtnClick,menuItems,setTabKey,set
 
     )
 }
-const mapStateToProps=createStructuredSelector({
-    menuItems:selectMenuItem
-})
-const mapDispatchToProps=dispatch=>({
-    setTabKey:data=>dispatch(setProductTabKey(data)),
-    setProductItem:data=>dispatch(setProductItem(data)),
-    setSubCatData:data=>dispatch(setSubCatData(data))
-})
-export default connect(mapStateToProps,mapDispatchToProps) (NavigationStyle1Component)
+
+export default NavigationStyle1Component

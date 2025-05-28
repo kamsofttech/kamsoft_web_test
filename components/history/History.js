@@ -13,7 +13,7 @@ const History = () => {
             <Container className={styles.history_container}>
                 <Row className={styles.row1}>
                     <Col md="9">
-                    <SectionTitle heading_title={"Established in 2002, Kamsoft Technologies delivers world-class IT solutions."}
+                    <SectionTitle heading_title={"Established in 2019, Kamsoft Technologies delivers world-class IT solutions."}
                     items={[
                         "At Kamsoft Technologies, we specialize in crafting intelligent automation solutions and distinctive web designs and application development tailored to the unique needs of diverse industries. We believe your website or portal should do more than just look good—it should communicate your brand, showcase your products, and drive engagement.",
                         "Our designs are intuitive, responsive, and strategically aligned to spark interest and guide users toward action. Alongside web development, we also offer comprehensive digital services to amplify your online reach and business impact.Let your digital presence speak volumes—with Kamsoft."

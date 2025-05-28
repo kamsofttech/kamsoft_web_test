@@ -5,7 +5,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import SectionTitle from '@/components/elements/sectionTitle/SectionTitle';
-import { Card, Form, Input, Button } from 'antd';
+import { Card, Form, Input, Button, message,notification } from 'antd';
+import axios from 'axios';
+import { comment } from 'postcss';
 
 const ContactNewComponent = () => {
     const [form] = Form.useForm();
@@ -14,33 +16,32 @@ const ContactNewComponent = () => {
         console.log('Failed:', errorInfo);
     };
 
-    const onFinish = async (values) => {
-        const { name, email, phone, comment } = values;
-        // console.log("val",values)
-        const subject = `Enquiry from ${name} (${phone})`;
-        const msg = `<h6>Name: ${name}</h6>  <h6>Phone: ${phone} </h6>  <h6>Email: ${email} </h6>  ----------------------------  <p>${comment} </p>`;
+   const onFinish = async (values) => {
         try {
             const res = await axios.post('/api/sendEmail',
                 {
-                    subject,
-                    msg,
-                    to: 'shreemarathecaterers@gmail.com',
-                    from: "enquiry@shreemarathecaterers.com",
-                    pass: "Enquiry@2025",
-                    hostName: "mail.shreemarathecaterers.com"
+                    name:values.name,
+                    email:values.email,
+                    phone:values.phone,
+                    comment:values.comment
                 })
-            console.log(res)
+            //console.log(res)
             if (res.status == 200) {
-                //form.resetFields()
-                message.success({
-                    content: 'Your message Has been send successfully',
-                    className: 'custom-class',
-                    style: {
-                        marginTop: '40vh',
-                    },
+
+                form.resetFields()
+                notification.success({
+                message: `Email`,
+                description: 'Your message Has been sent successfully',
+                placement:'bottomRight',
                 });
+               
             } else {
-                message.error('Your message has not been send');
+                notification.error({
+                message: `Email`,
+                description: 'Your message has not been sent',
+                placement:'bottomRight',
+                });
+               
             }
 
 
@@ -48,7 +49,11 @@ const ContactNewComponent = () => {
 
         } catch (error) {
             console.error("Email sending error: ", error);
-            message.error('An unexpected error occurred.');
+            notification.error({
+                message: `Email`,
+                description: error,
+                placement:'bottomRight',
+            });
         }
     };
     return (
@@ -82,22 +87,29 @@ const ContactNewComponent = () => {
                                         <h4>Need assistance? please fill the form</h4>
                                         <Form
                                             layout='vertical'
+                                            form={form}
                                             onFinish={onFinish}
                                             onFinishFailed={onFinishFailed}
                                             size='large'
+                                            initialValues={{
+                                                name: '',
+                                                email: '',
+                                                phone:'',
+                                                comment:''
+                                            }}
                                             className={styles.form_box}
                                         >
                                             <Form.Item
                                                 name="name"
                                                 className={styles.form_item_input}
-
+                                                rules={[{ required: true,message:'Name is required!' }]}
                                             >
                                                 <Input placeholder="Name" />
                                             </Form.Item>
                                             <Form.Item
                                                 className={styles.form_item_input}
                                                 name="email"
-
+                                                rules={[{ required: true,message:'Email is required!' }]}
                                             >
                                                 <Input placeholder="Email"
                                                 />
@@ -107,7 +119,7 @@ const ContactNewComponent = () => {
                                             <Form.Item
                                                 className={styles.form_item_input}
                                                 name="phone"
-
+                                                rules={[{ required: true,message:'Phone is required!' }]}
                                             >
                                                 <Input placeholder="Phone"
                                                 />
@@ -116,7 +128,7 @@ const ContactNewComponent = () => {
                                             <Form.Item
                                                 name="comment"
                                                 className={styles.form_item_input}
-
+                                                rules={[{ required: true,message:'Messaage is required!' }]}
                                             >
                                                 <Input.TextArea rows={8} placeholder="Enquiry Description" />
                                             </Form.Item>

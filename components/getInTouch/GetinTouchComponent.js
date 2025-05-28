@@ -27,16 +27,16 @@ const GetinTouchComponent = () => {
                     if (data == '1') {
                         form.resetFields()
                         message.success({
-                            content: 'Your message Has been send successfully',
+                            content: 'Your message Has been sent successfully',
                             className: 'custom-class',
                             style: {
                                 marginTop: '40vh',
                             },
                         });
                     } else {
-                        message.error('Your message has not been send');
+                        message.error('Your message has not been sent');
                         message.success({
-                            content: 'Your message has not been send',
+                            content: 'Your message has not been sent',
                             className: 'custom-class',
                             style: {
                                 marginTop: '40vh',

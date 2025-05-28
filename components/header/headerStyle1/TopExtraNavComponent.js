@@ -11,13 +11,15 @@ const TopExtraNavComponent = ({ isFixed }) => {
     
     const{tabKey, setTabKey,setTopSecRef}=useUserContext()
     setTopSecRef(topSecRef)
+    console.log('tabKey',tabKey)
     const router = useRouter()
     function handleClick(id) {
+        setTabKey(id)
         router.push({
             pathname:'aboutUs',
             query:{tabKey:id}
         })
-        setTabKey(id)
+        
     }
     
     return (
@@ -56,11 +58,12 @@ const TopExtraNavComponent = ({ isFixed }) => {
 
                             <div className={styles.for_second}>
                             {/* <a onClick={()=>router.push(`/`)}><i class="fa-solid fa-house"></i></a> */}
-                                    <a onClick={()=>handleClick('1')}><h6>About us</h6></a>
-                                    <a onClick={()=>handleClick('2')}><h6>Careers</h6></a>
-                                    <a onClick={()=>handleClick('3')}><h6>How We Work</h6></a>
-                                    <a onClick={()=>handleClick('6')}><h6>FAQ</h6></a>
-                                    <a onClick={()=>handleClick('7')}><h6>Contact Us</h6></a>
+                                    <a className={`${tabKey=='1'?styles.active:''}`} onClick={()=>handleClick('1')}><h6>About us</h6></a>
+                                    <a className={`${tabKey=='2'?styles.active:''}`} onClick={()=>handleClick('2')}><h6>Careers</h6></a>
+                                    <a className={`${tabKey=='3'?styles.active:''}`} onClick={()=>handleClick('3')}><h6>How We Work</h6></a>
+                                    {/* <a className={`${tabKey=='4'?styles.active:''}`} onClick={()=>handleClick('3')}><h6>Our values</h6></a> */}
+                                    <a className={`${tabKey=='5'?styles.active:''}`} onClick={()=>handleClick('5')}><h6>FAQ</h6></a>
+                                    <a className={`${tabKey=='6'?styles.active:''}`}onClick={()=>handleClick('6')}><h6>Contact Us</h6></a>
                                    
                                     
                                 </div>

@@ -39,7 +39,9 @@
     font-size: 14px;
     font-weight: 500;
 }
-
+.active>h6{
+    color: #3bb64a;
+}
 .forfl i {
     color: #3a3a3a;
 }

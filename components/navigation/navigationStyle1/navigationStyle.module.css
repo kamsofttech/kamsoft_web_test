@@ -37,13 +37,16 @@
 .nav > li > a:active,
 .nav > li > a:focus {
     background-color: transparent;
-    color:  #1dbb26 
+    color:  #1dbb26 !important;
 }
-
+/* .active{
+    background-color: transparent;
+    color:  #1dbb26 
+} */
 .nav > li.active > a,
 .nav > li.current-menu-item > a {
     background-color: transparent;
-    color: #1dbb26;
+    color: #1dbb26 !important;
 }
 /*.nav > li.active > a:after{
 	content: "";

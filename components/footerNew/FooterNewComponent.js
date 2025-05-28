@@ -15,21 +15,24 @@ const footerNew = () => {
                 <div className={styles.foot_box2_items}>
                         <Row>
                             <Col lg ="6" sm="6" className={styles.foot_box2_col1}>
-                                <FooterElements title={"IT Services"} items={["Data Synchronization",
-                                    "Content Management",
-                                    "Content Delivery",
-                                    "Transaction Processing",
-                                    "Process Automation"
+                                <FooterElements type={'services'} title={"IT Services"} items={[
+                                    "Web and Mobile App Development",
+                                    "Digital Marketing & SEO",
+                                    "RFID Workflow Automation",
+                                    "IT Consulting",
+                                    "ERP & Interoperability"
                                 ]} /></Col>
                             <Col lg ="6"  sm="6">
-                                <FooterElements title={"Company"} items={["Event Processing",
-                                    "Information Security",
-                                    "Mobile Platforms",
-                                    "Communications",
-                                    "Careers"
+                                <FooterElements type={'company'} title={"Company"} items={[
+                                    "About Us",
+                                    "Careers",
+                                    "How We Work",
+                                    "Our values",
+                                    "FAQs",
+                                    "Contact Us"
                                 ]} /></Col>
                         </Row>
-                        <p>©Copyright 2020 <a href='#'>Kamsoft Technologies</a> All Rights Reserved</p>
+                        <p>©Copyright 2025 <a href='#'>Kamsoft Technologies</a> All Rights Reserved</p>
                     </div>
                     
                 </Col>

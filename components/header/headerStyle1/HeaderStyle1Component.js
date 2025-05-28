@@ -15,6 +15,19 @@ const HeaderStyle1Component = () => {
     const[bg,setBg]=React.useState(null)
     const[btnClick,setBtnClick]=React.useState(false)
     const[isFixed,setIsFixed]=React.useState(null)
+    const {sec3,tabKey,setTabKey,serTabKey, setSerTabKey } = useUserContext()
+      
+      const onMenuClick=(tabId)=>{
+            setTabKey(`${6}`)
+            router.push({
+                pathname:'aboutUs',
+                query:{tabKey:`${6}`}
+            })
+           
+            
+            
+            
+        }
     React.useEffect(()=>{
         const handleScroll = () => {
             var scroll = window.pageYOffset
@@ -70,7 +83,7 @@ const HeaderStyle1Component = () => {
                     <div className={styles.extra_nav}>
                     <Space style={{display:btnClick?'none':'flex'}}>
                         <Button size='large' icon={<i className="fa-solid fa-border-none"></i>} className='btn_drawer'/>
-                        <Button onClick={()=>router.pathname=='/'?window.scrollTo(0,sec5.current.offsetTop-80):router.push(`/#sec5`)} size='large' className='btn_primary2'>Let&apos;s Talk</Button>
+                        <Button onClick={()=>onMenuClick()} size='large' className='btn_primary2'>Let&apos;s Talk</Button>
                     </Space>
                         
                     </div>
