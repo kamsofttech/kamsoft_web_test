@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kamsoft.co.in
+
+# Sitemaps
+Sitemap: https://kamsoft.co.in/sitemap.xml

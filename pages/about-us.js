@@ -1,6 +1,6 @@
 import AboutSectionComponent from '@/components/about/approches/AboutSectionComponent'
 import BreadcumbStyle1 from '@/components/elements/breadcumb/breadcumbStyle1/BreadcumbStyle1'
-import GetinTouchComponent from '@/components/getInTouch/GetinTouchComponent'
+// import GetinTouchComponent from '@/components/getInTouch/GetinTouchComponent'
 import StoreLocationComponent from '@/components/location/StoreLocationComponent'
 import MissionComponent from '@/components/mission/MissionComponent'
 import NetworkComponent from '@/components/networks/NetworkComponent'
