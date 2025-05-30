@@ -20,7 +20,7 @@ const AboutNewMainComponent = () => {
               <IconBox1Component title={"175+"} desc={"Successfully completed projects"} />
             </Col>
             <Col lg='5' md='6'className={styles.iconBox2}>
-              <IconBox2Component video={"https://youtu.be/-Gh9WYDSrRA?si=fEaLMLdQwMuqjKgI"} />
+              <IconBox2Component video={"https://youtu.be/K3qxiUwYfC8"} />
             </Col>
             <Col lg='4' md='6' className={styles.iconBox3}>
               <IconBox3Component num={"12"} qEmp={"Qualified Employees"} enpDesc={"Work with our leaders and the hard-working personalities who deliver innovative concepts to corporations like yours."} />
