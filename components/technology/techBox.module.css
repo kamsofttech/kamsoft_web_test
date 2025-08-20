@@ -45,3 +45,12 @@
 .techBox>ul>li:not(:last-child) {
     margin-right: .5rem;
 }
+
+/* For phone screens */
+@media (max-width: 576px) {
+    .techBox {
+        padding: 5rem !important;
+    }
+}
+
+

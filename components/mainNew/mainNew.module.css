@@ -27,7 +27,7 @@
     padding-top: 3rem;
     order:1;
     flex: 0 0 auto;
-    padding-right: 150px;
+    padding-right: 100px;
     width: 100%;
 }
 .leftTitle h1{
@@ -82,4 +82,28 @@
     height: fit-content;
     flex: 0 0 auto;
         width: 100%;
+}
+
+@media (min-width: 400px) {
+    .heading{
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .heading {
+        padding: 0 20px !important;
+    }
+}
+
+
+
+/* For iPhone 12 Pro, 13, 13 Pro, 14, 14 Pro, 15, 15 Pro in Portrait Mode */
+@media only screen 
+  and (width: 390px) 
+  and (height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .heading {
+        padding: 0 20px !important;
+    }
 }

@@ -18,3 +18,26 @@
     line-height: 1.5;
     color: #646e64;
 }
+
+@media (min-width: 400px) {
+    .heading{
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .heading {
+        padding: 0 20px !important;
+    }
+}
+
+
+/* For iPhone 12 Pro, 13, 13 Pro, 14, 14 Pro, 15, 15 Pro in Portrait Mode */
+@media only screen 
+  and (width: 390px) 
+  and (height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .heading {
+        padding: 0 20px !important;
+    }
+}
