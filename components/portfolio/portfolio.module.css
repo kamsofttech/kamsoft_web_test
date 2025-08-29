@@ -225,3 +225,38 @@ font-size: 20px;
 .serTab :global(.ant-tabs .ant-tabs-tab.ant-tabs-tab-focus .ant-tabs-tab-btn) {  
      outline: 0px solid #91caff00;
 } 
+
+/* Portfolio section container */
+.portfolio-section {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Desktop: 2-column grid */
+.portfolio-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 15px 30px; /* row-gap + column-gap */
+}
+
+/* Each item */
+.portfolio-items .item {
+  padding: 10px 15px;
+  box-sizing: border-box;
+  word-break: break-word;   /* breaks long text */
+  overflow-wrap: anywhere;  /* modern safe wrap */
+  text-align: left;
+}
+
+/* Mobile: 1-column layout */
+@media (max-width: 768px) {
+  .portfolio-items {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+
+  .portfolio-items .item {
+    width: 100%;
+    text-align: center; /* optional: center text on mobile */
+  }
+}

@@ -1,4 +1,4 @@
-.heading{
+/* .heading{
     text-align: center;
     margin-bottom: 50px;
     padding: 0 190px;   
@@ -29,14 +29,94 @@
     .heading {
         padding: 0 20px !important;
     }
-}
+} */
 
 /* For iPhone 12 Pro, 13, 13 Pro, 14, 14 Pro, 15, 15 Pro in Portrait Mode */
-@media only screen 
+/* @media only screen 
   and (width: 390px) 
   and (height: 844px) 
   and (-webkit-device-pixel-ratio: 3) {
     .heading {
         padding: 0 20px !important;
     }
+} */
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;   /* default mobile-friendly padding */
+    z-index: 1;
+    position: relative;
 }
+
+.heading h2 {
+    font-size: 32px; /* slightly smaller for better fit */
+    color: #fff;
+    margin: 0 0 1rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.heading p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* Tablet/Desktop Screens */
+@media (min-width: 768px) {
+    .heading {
+        padding: 0 80px; /* moderate padding */
+    }
+}
+
+@media (min-width: 1200px) {
+    .heading {
+        padding: 0 190px; /* large desktop padding */
+    }
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* flexible grid */
+  gap: 20px; /* reduce spacing between items */
+  justify-items: center;
+  align-items: start;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.tech-item {
+  text-align: center;
+  margin: 0;            /* remove extra margins */
+  padding: 10px 0;      /* reduced padding */
+}
+
+.tech-item h3, 
+.tech-item p {
+  margin: 5px 0;        /* smaller spacing between text lines */
+  line-height: 1.4;
+  font-size: 14px;      /* keep text compact */
+}
+
+/* Mobile: make spacing even tighter */
+@media (max-width: 768px) {
+  .tech-stack {
+    gap: 12px;          /* tighter spacing */
+    grid-template-columns: 1fr 1fr; /* 2 per row */
+  }
+
+  .tech-item {
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 8px;
+  }
+}
+

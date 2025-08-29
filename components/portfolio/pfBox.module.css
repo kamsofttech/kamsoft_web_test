@@ -70,3 +70,27 @@
         column-gap: 30px;
 }
 }
+
+
+
+/* Mobile-first: 1-column layout by default */
+.gridWrapper {
+  display: flex; /* Use Flexbox for better control on a single column */
+  flex-direction: column;
+}
+
+/* For screens larger than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+  .gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 130px; /* Use the larger gap for desktop */
+  }
+}
+
+/* For very narrow mobile screens, set a smaller gap */
+@media (max-width: 767px) {
+  .gridWrapper {
+    column-gap: 30px; /* A smaller gap for mobile, though a flexbox layout is better */
+  }
+}
